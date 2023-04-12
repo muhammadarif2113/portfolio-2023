@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Opensans"> -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script  src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <!-- <script  src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script> -->
+    <script  src="isotope.pkgd.min.js"></script>
+    <script src="script.js"></script>
+
+
+
+
+
+
+
+
+
+    <title>Document</title>
+
+</head>
+<body>
+    
+    <div class="topWaves spacer layer1 bubble">
+        <div class="content-area" style="border: 2px solid black">
+            <div class="navigation">
+                <ul>
+                    <li class="active">
+                        <a href="#">
+                            <span class="icon">
+                                <ion-icon name="home-outline"></ion-icon>
+                            </span>
+                            <span class="text">Home</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <span class="icon">
+                                <ion-icon name="help-circle-outline"></ion-icon>                            </span>
+                            <span class="text">About</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <span class="icon">
+                                <ion-icon name="stats-chart-outline"></ion-icon>
+                            </span>
+                            <span class="text">Skills</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <span class="icon">
+                                <ion-icon name="file-tray-full-outline"></ion-icon>
+                            </span>
+                            <span class="text">Projects</span>
+                        </a>
+                    </li>
+                    <div class="indicator"></div>
+                </ul>
+            </div>
+            <!-- <nav class="navbar">  
+                <ul class="nav-logo">
+                    <li>
+                        <a href="#">
+                            saim.dev
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="nav-links">  
+                    <li>  
+                        <a href="#"> 
+                            <span class="icon"></span>
+                            <span class="text">Portfolio</span>
+                        </a>  
+                    </li>  
+                
+                    <li>  
+                        <a href="#"> 
+                            <span class="icon"></span>
+                            <span class="text">About</span> 
+                        </a>  
+                    </li>  
+                
+                    <li>  
+                        <span class="icon"></span>
+                        <span class="text">Skills</span>  
+                    </li>  
+                
+                    <li>  
+                        <span class="icon"></span>
+                        <span class="text">Home</span>   
+                    </li>  
+                </ul>  
+            </nav>   -->
+            <div class="bubble-content">
+                <div class="profile-text">
+                    <p class="bio-desc1 font-color2">Hello, I'm</p>
+                    <p class="bio-desc2 font-color3">M. John Doe</p>
+                    <p class="bio-desc3 font-color1">HTML Email Developer</p>
+                    <p class="bio-desc4 font-color4">I specialize in the creation and deployment of email marketing campaigns</p>
+                    <button>Portfolio</button>
+                </div>
+                <div class="img-container">
+                    <img class="profile-img" src="test-img.png"/>
+                </div>
+            </div>
+
+            <section>
+                <h1>Skills</h1>
+            </section>
+
+            <div class="projectCtn">
+
+                <div class="project-title">
+                    <h2>Portfolio</h2>
+                    <h1>HTML Email Portolio</h1>
+                </div>
+        
+                <div id="filters" class="button-group filters-button-group">
+                    <button class="button is-checked" data-filter="*">All</button>
+                    <button class="button" data-filter=".news">Newsletter</button>
+                    <button class="button" data-filter=".trans">Transactional</button>
+                    <button class="button" data-filter=".promo">Promotional</button>
+                </div>
+                <!-- <div class="gridCtn"> -->
+                    <div class="grid">
+                        <div class="grid-item news" data-category="news">
+                            <img class="grid-img" src="img/Capture.JPG">
+                            <div class="item-category">Newsletter</div>
+                        </div>
+                        <div class="grid-item trans" data-category="trans">
+                            <img class="grid-img" src="img/Capture.JPG">
+                            <div class="item-category">Transactional</div>
+                        </div>
+                        <div class="grid-item promo" data-category="promo">
+                            <img class="grid-img" src="img/Capture.JPG">
+                            <div class="item-category">Promotion</div>
+                        </div>
+                        <div class="grid-item promo" data-category="promo">
+                            <img class="grid-img" src="img/Capture.JPG">
+                            <div class="item-category">Promotion</div>
+                        </div>
+                        <div class="grid-item trans" data-category="trans">
+                            <img class="grid-img" src="img/Capture.JPG">
+                            <div class="item-category">Transactional</div>
+                        </div>
+                        <div class="grid-item promo" data-category="promo">
+                            <img class="grid-img" src="img/Capture.JPG">
+                            <div class="item-category">Promotion</div>
+                        </div>
+                    </div>
+                <!-- </div> -->
+        
+            </div>
+        </div>
+        
+    </div>
+
+    
+
+    
+
+    <div class="spacer layer2"></div>
+
+    
+</body>
+</html>
