@@ -15,14 +15,6 @@
     <script  src="isotope.pkgd.min.js"></script>
     <script src="script.js"></script>
 
-
-
-
-
-
-
-
-
     <title>Document</title>
 
 </head>
@@ -35,7 +27,7 @@
                     <li class="list active">
                         <a href="#">
                             <span class="icon">
-                                <ion-icon name="home-outline"></ion-icon>
+                                <ion-icon name="home"></ion-icon>
                             </span>
                             <span class="text">Home</span>
                         </a>
@@ -44,7 +36,7 @@
                     <li class="list">
                         <a href="#">
                             <span class="icon">
-                                <ion-icon name="help-circle-outline"></ion-icon>                            </span>
+                                <ion-icon name="help-circle"></ion-icon>                            </span>
                             <span class="text">About</span>
                         </a>
                     </li>
@@ -52,7 +44,7 @@
                     <li class="list">
                         <a href="#">
                             <span class="icon">
-                                <ion-icon name="stats-chart-outline"></ion-icon>
+                                <ion-icon name="stats-chart"></ion-icon>
                             </span>
                             <span class="text">Skills</span>
                         </a>
@@ -61,7 +53,7 @@
                     <li class="list">
                         <a href="#">
                             <span class="icon">
-                                <ion-icon name="file-tray-full-outline"></ion-icon>
+                                <ion-icon name="file-tray-full"></ion-icon>
                             </span>
                             <span class="text">Projects</span>
                         </a>
@@ -69,48 +61,14 @@
                     <div class="indicator"></div>
                 </ul>
             </div>
-            <!-- <nav class="navbar">  
-                <ul class="nav-logo">
-                    <li>
-                        <a href="#">
-                            saim.dev
-                        </a>
-                    </li>
-                </ul>
-
-                <ul class="nav-links">  
-                    <li>  
-                        <a href="#"> 
-                            <span class="icon"></span>
-                            <span class="text">Portfolio</span>
-                        </a>  
-                    </li>  
-                
-                    <li>  
-                        <a href="#"> 
-                            <span class="icon"></span>
-                            <span class="text">About</span> 
-                        </a>  
-                    </li>  
-                
-                    <li>  
-                        <span class="icon"></span>
-                        <span class="text">Skills</span>  
-                    </li>  
-                
-                    <li>  
-                        <span class="icon"></span>
-                        <span class="text">Home</span>   
-                    </li>  
-                </ul>  
-            </nav>   -->
+        
             <div class="bubble-content">
                 <div class="profile-text">
                     <p class="bio-desc1 font-color2">Hello, I'm</p>
                     <p class="bio-desc2 font-color3">M. John Doe</p>
                     <p class="bio-desc3 font-color1">HTML Email Developer</p>
                     <p class="bio-desc4 font-color4">I specialize in the creation and deployment of email marketing campaigns</p>
-                    <button>Portfolio</button>
+                    <a href="#" class="profile-but">Portfolio</a>
                 </div>
                 <div class="img-container">
                     <img class="profile-img" src="test-img.png"/>
@@ -119,42 +77,117 @@
 
             <h1 class="skills-title">Skills</h1>
 
-            <div class="skills-ctn">
-                <div class="skills align-left">
-                    <img src="/img/html.png"/>
-                </div>
+            <div class="maincontainer-ctn">
 
-                <div class="skills">
-                    <img src="/img/css.png"/>
+            <div class="maincontainer">
+                <div class="thecard">
+                    <div class="thefront">
+                        <img src="/img/html.png"/>
+                    </div>
+                    <div class="theback"> 
+                        <img src="/img/html.png"/>
+                        <div class="content">
+                            <p>HTML</p>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="skills">
-                    <img src="/img/figma.png"/>
-                </div>
-
-                <div class="skills align-right">
-                    <img src="/img/litmus.png"/>
-                </div>
-
-                <div class="skills align-left">
-                    <img src="/img/photoshop.png"/>
-                </div>
-
-                <div class="skills">
-                    <img src="/img/responsive.png"/>
-                </div>
-
-                <div class="skills">
-                    <img src="/img/responsive.png"/>
-                </div>
-
-                <div class="skills align-right">
-                    <img src="/img/responsive.png"/>
-                </div>
-
             </div>
 
-            <div class="projectCtn">
+            <div class="maincontainer">
+                <div class="thecard">
+                    <div class="thefront">
+                        <img src="/img/css.png"/>
+                    </div>
+                    <div class="theback"> 
+                        <img src="/img/css.png"/>
+                        <div class="content">
+                            <p>CSS</p>
+                        </div>
+                    </div>                </div>
+            </div>
+            
+            <div class="maincontainer">
+                <div class="thecard">
+                    <div class="thefront">
+                        <img src="/img/figma.png"/>
+                    </div>
+                    <div class="theback"> 
+                        <img src="/img/figma.png"/>
+                        <div class="content">
+                            <p>FIGMA</p>
+                        </div>
+                    </div>                </div>
+            </div>
+
+            <div class="maincontainer">
+                <div class="thecard">
+                    <div class="thefront">
+                        <img src="/img/litmus.png"/>
+                    </div>
+                    <div class="theback"> 
+                        <img src="/img/litmus.png"/>
+                        <div class="content">
+                            <p>Litmus</p>
+                        </div>
+                    </div>                </div>
+            </div>
+
+            <div class="maincontainer">
+                <div class="thecard">
+                    <div class="thefront">
+                        <img src="/img/photoshop.png"/>
+                    </div>
+                    <div class="theback"> 
+                        <img src="/img/photoshop.png"/>
+                        <div class="content">
+                            <p>Photoshop</p>
+                        </div>
+                    </div>                </div>
+            </div>
+
+            <div class="maincontainer">
+                <div class="thecard">
+                    <div class="thefront">
+                        <img src="/img/responsive.png"/>
+                    </div>
+                    <div class="theback"> 
+                        <img src="/img/responsive.png"/>
+                        <div class="content">
+                            <p>Responsive Design</p>
+                        </div>
+                    </div>                </div>
+            </div>
+
+            <div class="maincontainer">
+                <div class="thecard">
+                    <div class="thefront">
+                        <img src="/img/responsive.png"/>
+                    </div>
+                    <div class="theback"> 
+                        <img src="/img/html.png"/>
+                        <div class="content">
+                            <p>HTML</p>
+                        </div>
+                    </div>                </div>
+            </div>
+
+            <div class="maincontainer">
+                <div class="thecard">
+                    <div class="thefront">
+                        <img src="/img/responsive.png"/>
+                    </div>
+                    <div class="theback"> 
+                        <img src="/img/html.png"/>
+                        <div class="content">
+                            <p>HTML</p>
+                        </div>
+                    </div>                </div>
+            </div>
+
+        </div>
+
+
+            <!-- <div class="projectCtn">
 
                 <div class="project-title">
                     <h2>Portfolio</h2>
@@ -194,49 +227,11 @@
                             <div class="item-category">Promotion</div>
                         </div>
                     </div>
-                <!-- </div> -->
         
-            </div>
+            </div> -->
         </div>
         
     </div>
-
-    <h1 class="skills-title">Skills</h1>
-
-            <div class="skills-ctn">
-                <div class="skills align-left">
-                    <img src="/img/html.png"/>
-                </div>
-
-                <div class="skills">
-                    <img src="/img/css.png"/>
-                </div>
-
-                <div class="skills">
-                    <img src="/img/figma.png"/>
-                </div>
-
-                <div class="skills align-right">
-                    <img src="/img/litmus.png"/>
-                </div>
-
-                <div class="skills align-left">
-                    <img src="/img/photoshop.png"/>
-                </div>
-
-                <div class="skills">
-                    <img src="/img/responsive.png"/>
-                </div>
-
-                <div class="skills">
-                    <img src="/img/responsive.png"/>
-                </div>
-
-                <div class="skills align-right">
-                    <img src="/img/responsive.png"/>
-                </div>
-
-            </div>
 
             <div class="projectCtn">
 
@@ -254,7 +249,7 @@
                 <!-- <div class="gridCtn"> -->
                     <div class="grid">
                         <div class="grid-item news" data-category="news">
-                            <img class="grid-img" src="img/Capture.JPG">
+                            <img class="grid-img" src="img/Apple-Newsletter2.png">
                             <div class="item-category">Newsletter</div>
                         </div>
                         <div class="grid-item trans" data-category="trans">
@@ -262,11 +257,11 @@
                             <div class="item-category">Transactional</div>
                         </div>
                         <div class="grid-item promo" data-category="promo">
-                            <img class="grid-img" src="img/Capture.JPG">
+                            <img class="grid-img" src="img/airline-email2.png">
                             <div class="item-category">Promotion</div>
                         </div>
                         <div class="grid-item promo" data-category="promo">
-                            <img class="grid-img" src="img/Capture.JPG">
+                            <img class="grid-img" src="img/nba-email2.png">
                             <div class="item-category">Promotion</div>
                         </div>
                         <div class="grid-item trans" data-category="trans">
@@ -299,6 +294,41 @@
         }
         list.forEach((item) => 
         item.addEventListener('click', activeLink));
+
+        const header = document.querySelector('.navigation')
+        const indicator = document.querySelector('.indicator')
+        const indicatorBefore = document.querySelector('.indicator::before')
+        const indicatorAfter = document.querySelector('.indicator::after')
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50 ){
+
+                header.classList.add('navigationTrans')
+                indicator.classList.add('indicatorTrans')
+                indicatorBefore.classList.add('.indicatorTrans::before')
+                indicatorAfter.classList.add('.indicatorTrans::after')
+            } else if (window.scrollY <= 50){
+                header.classList.remove('navigationTrans')
+                indicator.classList.remove('indicatorTrans')
+                indicatorBefore.classList.remove('.indicatorTrans::before')
+                indicatorAfter.classList.remove('.indicatorTrans::after')
+            }
+        })
+
+        const button = document.querySelector('.profile-but'); 
+        button.addEventListener('click', function(e){
+            let x = e.clientX - e.target.offsetLeft; 
+            let y = e.clientY - e.target.offsetTop; 
+
+            let ripples = document.createElement('span-but'); 
+            ripples.style.left = x + 'px'; 
+            ripples.style.top = y + 'px'; 
+            this.appendChild(ripples)
+        })
+
+        setTimeOut(() => {
+            ripples.remove()
+        }, 1000); 
     </script>
 
     
