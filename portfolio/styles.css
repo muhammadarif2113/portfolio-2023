@@ -99,7 +99,7 @@ body{
     position: fixed;
     /* z-index: 5; */
     transition: all 0.5s;
-    margin: 5px;
+    margin-top: 5px;
 }
 
 .navigationTrans{
@@ -116,7 +116,7 @@ body{
     transition: all 0.5s;
     outline: 1px solid blue;
     /* border-bottom: none; */
-    margin: 5px;
+    margin-top: 5px;
 }
 
 .icon ion-icon{
@@ -330,7 +330,6 @@ body{
 .profile-text{
     /* border: 1px solid black; */
     margin-right: 200px;
-    margin-left: 5px;
     /* margin-top: 100px; */
     border: 1px solid black;
 
@@ -366,6 +365,49 @@ body{
 
 .bio-desc3, .bio-desc4{
     font-family: "Open Sans", sans-serif; 
+}
+
+.about-me-background{
+    width: 100%;
+    position: relative;
+}
+
+.about-me-background::before{
+    width: 100%;
+
+    content: "";
+    background-image: url('./img/flower4.jpg');
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.3;
+
+}
+
+.about-me-title{
+    text-align: center;
+
+}
+
+.about-me-ctn{
+    width: 1245px; 
+    margin: 0 auto;
+    /* text-align: center; */
+    display: flex;
+    opacity: 1;
+}
+
+.gif{
+    position: relative;
+}
+
+.about-me-text{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 50px;
 }
 .projectCtn{
     border: 1px solid black;
@@ -439,15 +481,21 @@ span-but{
         opacity: 0;
     }
 }
-.button:active,
-.button.is-checked {
+/* .button:active,
+.button.is-checked { 
   background-color: #28F;
+} */
+
+.button:focus {
+    background-color:blue;
+    color: white;
+    text-shadow: 0 -1px hsla(0, 0%, 0%, 0.8);
 }
 
-.button.is-checked {
+/* .button.is-checked {
   color: white;
   text-shadow: 0 -1px hsla(0, 0%, 0%, 0.8);
-}
+} */
 
 .button:active {
   box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8);
@@ -511,7 +559,6 @@ span-but{
 }
 
 .maincontainer:hover > .thecard {
-    cursor: pointer;
     transform: rotateY(180deg);
   }
 
@@ -570,16 +617,22 @@ span-but{
     left: 0;
     position: absolute;
     display: flex;
-    justify-content: center;
+    justify-content:flex-end;
     align-items: center;
     flex-direction: column;
     transition: all 0.1s;
+    border-radius: 10px;
+
 }
 
 .content p{
-    color: blue;
+    color: white;
+    background-color: black;
+    opacity: 0.7;
+    width: 75%;
+    border-radius: 1px;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 900;
 }
 
 .thecard:hover{
@@ -603,30 +656,33 @@ span-but{
 .grid {
     border: 2px solid blue;
     width: 100%;
-    /* margin: 0 auto; */
     /* max-width: 1241px; */
-
-    
-
 }
 
 /* clear fix */
-.grid:after {
+/* .grid:after {
   content: '';
   display: block;
   clear: both;
+} */
+
+.grid-item-ctn{
+    position: absolute;
+    border: 7px solid pink;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    height: 100%;
 }
 
 /* ---- .element-item ---- */
 .grid-item {
   /* position: relative; */
   float: center;
-  margin: 8px;
-  padding: 10px;
-  background: #888;
-  color: #262524;
-  border-radius: 10px;
+  padding: 2px 2px;
   width: 32%;
+  height: 650px;
+  border: 5px solid green;
 
 
 }
@@ -637,6 +693,124 @@ span-but{
     /* height: 400px; */
 
 }
+.project-box{
+    display: block;
+    background: url(img/Apple-Newsletter2.png) no-repeat;
+    background-size: contain; 
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+
+
+    /* position: relative;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    height: 100%; */
+
+    /* background-size: cover; */
+    /* height: 400px;
+    width: 840px; */
+}
+
+.project-box:nth-child(2){
+    border: 30px solid black;
+    background-color: gold;
+
+}
+
+.project-box2{
+    display: block;
+    background: url(img/travel-promo3.png) no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    /* height: 100%; */
+    /* height: 100%;
+    position: relative; */
+
+    /* height: 750px; */
+}
+
+.project-box3{
+    display: block;
+    background: url(img/nba-email2.png) no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    /* height: 100%; */
+    /* height: 100%;
+    position: relative; */
+
+    /* height: 750px; */
+}
+
+.project-box .grey-bg {
+    background: #efefef;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+  }
+  
+  .project-box .grey-bg:hover {
+    opacity: 0.9;
+  }
+  
+  .project-box .grey-bg:hover .project-info .project-details {
+    -webkit-transform: translate3d(10px, 0, 0);
+            transform: translate3d(10px, 0, 0);
+    opacity: 1;
+  }
+  
+  .project-box .grey-bg:hover .project-info .project-title {
+    opacity: 1;
+  }
+  
+  .project-box .grey-bg .project-info {
+    padding: 56px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .project-box .grey-bg .project-info .project-details {
+    position: relative;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    margin: 0 0 1rem;
+    -webkit-transform: translate3d(-200px, 0, 0);
+            transform: translate3d(-200px, 0, 0);
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    opacity: 0;
+  }
+  
+  .project-box .grey-bg .project-info .project-title {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-left: 7px;
+    opacity: 0;
+  }
+  
+  .project-box .grey-bg .project-info .fa-long-arrow-alt-right {
+    position: absolute;
+    bottom: 56px;
+    right: 56px;
+    font-size: 3rem;
+  }
+
+
 
 /* .grid-item > * {
   margin: 0;
