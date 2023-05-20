@@ -6,78 +6,126 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300&family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Opensans"> -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="animation.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script  src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
     <!-- <script  src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script> -->
     <script  src="isotope.pkgd.min.js"></script>
-    <script src="script.js"></script>
+    <script  src="script.js"></script>
 
     <title>Nice to Meet You!</title>
 
 </head>
 <body>
     
-    <div class="topWaves spacer layer1 bubble">
-        <div class="content-area" style="border: 2px solid black">
-            <div class="navigation">
-                <ul>
-                    <li class="list active">
-                        <a href="#">
-                            <span class="icon">
-                                <ion-icon name="home"></ion-icon>
-                            </span>
-                            <span class="text">Home</span>
-                        </a>
-                    </li>
+    <div class="topWaves spacer layer1 bubble" id="home">
+        <div class="content-area"> 
+            <header class="nav-header">
+                <a class="nav-logo" href="http://127.0.0.1:5500/index.html">
+                    <img src="img/Saim.Dev-5 (1).png" />
+                </a>
+                <div class="navigation">
+                    <ul>
+                        <li id="home-li" class="list active">
+                            <a href="#home">
+                                <span class="icon">
+                                    <ion-icon name="home"></ion-icon>
+                                </span>
+                                <span class="text">Home</span>
+                            </a>
+                        </li>
+    
+                        <li id="skills-li" class="list">
+                            <a href="#skills">
+                                <span class="icon">
+                                    <ion-icon name="stats-chart"></ion-icon>
+                                </span>
+                                <span class="text">Skills</span>
+                            </a>
+                        </li>
+    
+                        <li id="about-li" class="list">
+                            <a href="#about">
+                                <span class="icon">
+                                    <ion-icon name="help-circle"></ion-icon>                            
+                                </span>
+                                <span class="text">About</span>
+                            </a>
+                        </li>
+    
+                        <li id="projects-li" class="list">
+                            <a href="#projects">
+                                <span class="icon">
+                                    <ion-icon name="file-tray-full"></ion-icon>
+                                </span>
+                                <span class="text">Projects</span>
+                            </a>
+                        </li>
+                        <div class="indicator"></div>
+                    </ul>
+                </div>
+            </header>
+            
 
-                    <li class="list">
-                        <a href="#">
-                            <span class="icon">
-                                <ion-icon name="help-circle"></ion-icon>                            </span>
-                            <span class="text">About</span>
-                        </a>
-                    </li>
-
-                    <li class="list">
-                        <a href="#">
-                            <span class="icon">
-                                <ion-icon name="stats-chart"></ion-icon>
-                            </span>
-                            <span class="text">Skills</span>
-                        </a>
-                    </li>
-
-                    <li class="list">
-                        <a href="#">
-                            <span class="icon">
-                                <ion-icon name="file-tray-full"></ion-icon>
-                            </span>
-                            <span class="text">Projects</span>
-                        </a>
-                    </li>
-                    <div class="indicator"></div>
-                </ul>
-            </div>
         
             <div class="bubble-content">
                 <div class="profile-text">
-                    <p class="bio-desc1 font-color2">Hello, I'm</p>
-                    <p class="bio-desc2 font-color3">M. John Doe</p>
-                    <p class="bio-desc3 font-color1">HTML Email Developer</p>
-                    <p class="bio-desc4 font-color4">I specialize in the creation and deployment of email marketing campaigns</p>
-                    <a href="#" class="profile-but">Portfolio</a>
+                    <div class="name-profile">
+                        <p class="bio-desc1">Hello, I'm</p>
+                    <p class="bio-desc2">M. Saim <span>Arif</span></p>
+                    </div>
+                    
+                    <p class="bio-desc3">HTML Email Developer/Content Editor</p>
+                    
+                    <!-- <div class="button-ctn-animate">
+                        <a href="#" class="profile-but">Portfolio</a>
+                    </div> -->
+
+                    <button class="btn">
+                        <span class="btn-paint"></span>
+                        <span class="btn-paint"></span>
+                        <span class="btn-paint"></span>
+                        <span class="btn-paint"></span>
+                        <span class="btn-label">Portfolio</span>
+                    </button>
                 </div>
                 <div class="img-container">
-                    <img class="profile-img" src="test-img.png"/>
+                    <img class="profile-img" src="img/IMG_6572.jpg"/>
                 </div>
+
             </div>
 
-            <h1 class="skills-title">Skills</h1>
 
-            <div class="maincontainer-ctn">
+            <div class="skills-header">
+                <h1 id="skills" class="hidden skills-title">Skills</h1>
+            </div>
+
+            <!-- <div class="paint-bg">
+                <img src='img/watercolorblue.png' />
+            </div> -->
+
+            <!-- <div class="colorful-ctn">
+                <img src='img/colorfulpaint.png' />
+            </div> -->
+
+            <div class="watercolor-ctn">
+                <img src='img/watercolorblue.png' />
+            </div>
+
+            <div class="orange-paint-bg">
+                <img src='img/orangepaint.png' />
+            </div>
+
+            
+
+            <section class="hidden maincontainer-ctn">
 
                 <div class="maincontainer">
                     <div class="thecard">
@@ -185,39 +233,103 @@
                 </div>
 
             </div>
-            </div>
+        </section>
             
         </div>
 
-        <div class="about-me-background">
+        <section class="hidden about-me-background">
             <div class="about-me-ctn">
-                <div class="gif">
+                <!-- <div class="gif">
                     <img src="img/giphy.gif" /> 
                 </div>
     
-                <div class="about-me-text">
-                    <h1>About Me</h1>
-                    <p>A HTML Email Developer with a comprehensive understanding of email design. From translating design mockups into HTML email documents, I create original and effective designs that take all project deliverables into account. Personal development is very important to me and I'm constantly improving my skills and knowledge to get the best results from every campaign. My meticulous attention to detail and ability to work within tight deadlines ensures I deliver projects on time, on budget, and on specification.</p>
+                <div class="about-me-text" id="about">
+                    <h1>What I can do for you...</h1>
+                    <p>An HTML Email Developer with a comprehensive understanding of email design. From translating design mockups into HTML email documents, I create original and effective designs that take all project deliverables into account. Personal development is very important to me and I'm constantly improving my skills and knowledge to get the best results from every campaign. My meticulous attention to detail and ability to work within tight deadlines ensures I deliver projects on time, on budget, and on specification.</p>
+                </div> -->
+                <div class="about-me gif-props">
+                    <div class="gif">
+                        <img src="img/profile-img.png" /> 
+                    </div>
+                    <div class="about-me-text" id="about">
+                        <h1 class="text-down-hidden" >About me</h1>
+                        <p>Greetings! I am a skilled and dedicated Email Developer with a passion for crafting engaging and visually appealing email campaigns. With a solid background in coding, design, and marketing, I thrive on leveraging my expertise to create impactful communications that captivate audiences and drive results.</p>
+                        <div class="personal-details">
+                            <div class="email-location">
+                                <ul class="personal">
+                                    <li>
+                                        <h3>Email</h3>
+                                        <p>saimdev2@gmail.com</p>
+                                    </li>
+                                    <li>
+                                        <h3>Location</h3>
+                                        <p>New York, NY</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="education-employment">
+                                <ul class="personal">
+                                    <li>
+                                        <h3>Education</h3>
+                                        <p>Bachelor's of Science, Computer Information Systems</p>
+                                    </li>
+                                    <li>
+                                        <h3>Employment</h3>
+                                        <p>Open</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="about-me">
+                    <h1 class="gif-h1 text-down-hidden"> What I can do for you...</h1>
+                    <div class="left-to-right-hidden gif">
+                        <img src="img/giphy.gif" /> 
+                    </div>
+                </div>
+                <div class="about-me">
+                    <h1 class="text-down-hidden">In my free time you'll find me...</h1>
+                    <div class="personal-gifs">
+                        <img class="left-to-right-hidden gifs" src="img/dunking.gif"/>
+                        <img class="left-to-right-hidden gifs" src="img/family.gif"/>
+                        <img class="left-to-right-hidden gifs" src="img/traveling.gif"/>
+                    </div>
+                </div>
+                <div class="about-me">
+                    <p>Personal development is very important to me and I'm constantly improving my skills and knowledge to get the best results from every campaign. My meticulous attention to detail and ability to work within tight deadlines ensures I deliver projects on time, on budget, and on specification.</p>
+                </div>
+                <div class="about-me">
+                    <p>Personal development is very important to me and I'm constantly improving my skills and knowledge to get the best results from every campaign. My meticulous attention to detail and ability to work within tight deadlines ensures I deliver projects on time, on budget, and on specification.</p>
                 </div>
             </div>
-        </div>
+
+        </section>
 
 
 
-            <div class="projectCtn">
+
+
+            <div id="projects" class="hidden projectCtn">
 
                 <div class="project-title">
-                    <h1>Projects</h1>
+                    <h1>HTML Emails</h1>
                 </div>
         
                 <div id="filters" class="button-group filters-button-group">
-                    <button class="button is-checked" data-filter="*">All</button>
-                    <button class="button" data-filter=".news">NEWSLETTER</button>
-                    <button class="button" data-filter=".trans">TRANSACTIONAL</button>
-                    <button class="button" data-filter=".promo">PROMOTIONAL</button>
+                    <button class="button is-checked" data-filter="*" ontouchstart
+                    >ALL</button>
+                    <button class="button" data-filter=".news" ontouchstart
+                    >NEWSLETTER</button>
+                    <button class="button" data-filter=".trans" ontouchstart=""
+                    >TRANSACTIONAL</button>
+                    <button class="button" data-filter=".promo" ontouchstart=""
+                    >PROMOTIONAL</button>
                 </div>
                 <!-- <div class="gridCtn"> -->
-                    <div class="grid">
+                    <section class="grid">
                         <!-- <div class="grid-item-ctn"> -->
                             <div class="grid-item news" data-category="news">
 
@@ -225,10 +337,10 @@
                                     <div class="grey-bg">
                                         <div class="project-info">
                                             <div class="project-details">
-                                                Footwear Store
+                                                HTML Email
                                             </div>
                                             <div class="project-title">
-                                                E-Commerce Store
+                                                Apple Newsletter Clone
                                             </div>
                                             <a href="http://nyckiqs.live/">
                                                 <i class="fas fa-long-arrow-alt-right"></i>
@@ -264,7 +376,7 @@
                                 <!-- <div class="item-category">Transactional</div> -->
                             </div>
                             <div class="grid-item promo" data-category="promo">
-                                <div class="project-box">
+                                <div class="project-box2">
                                     <div class="grey-bg">
                                         <div class="project-info">
                                             <div class="project-details">
@@ -287,7 +399,7 @@
                                 <!-- <img class="grid-img" src="img/nba-email2.png">
                                 <div class="item-category">Promotion</div> -->
 
-                                <div class="project-box">
+                                <div class="project-box3">
                                     <div class="grey-bg">
                                         <div class="project-info">
                                             <div class="project-details">
@@ -347,7 +459,7 @@
                                 <div class="item-category">Promotion</div> -->
                             </div>
                         <!-- </div> -->
-                    </div>
+                        </section>
                 <!-- </div> -->
         
             </div>
@@ -359,16 +471,201 @@
     <div class="spacer layer2"></div>
 
     <script>
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if(entry.isIntersecting) {
+      entry.target.classList.add('show'); 
+      entry.target.classList.add('left-to-right-show');
+      entry.target.classList.add('text-down-show');
+
+    //   entry.target.classList.add('text-down-show');
+    } else {
+      entry.target.classList.remove('show'); 
+      entry.target.classList.remove('left-to-right-show'); 
+      entry.target.classList.remove('text-down-show'); 
+    //   entry.target.classList.remove('text-down-show');
+    }
+  })
+})
+
+const hiddenElements = document.querySelectorAll('.hidden'); 
+hiddenElements.forEach((el) => observer.observe(el)); 
+
+
+const hiddenElements2 = document.querySelectorAll('.left-to-right-hidden'); 
+hiddenElements2.forEach((el2) => observer.observe(el2)); 
+
+const hiddenElements3 = document.querySelectorAll('.text-down-hidden'); 
+hiddenElements3.forEach((el3) => observer.observe(el3)); 
+
+        let tl = gsap.timeline()
+
+        tl.from('.navigation', 
+        {
+            opacity: 0, 
+            x: 6000, 
+            duration: 1, 
+        })
+
+        tl.fromTo('.nav-logo', 
+            {
+                opacity: 0, 
+                x: -1000, 
+            }, 
+            {
+                x: 0,
+                opacity: 1, 
+                x: 0
+            }
+        )
+
+        tl.fromTo(".name-profile", 
+            {
+                x: 0, 
+                y: 100, 
+                opacity: 0
+            }, 
+            {
+                x: 0, 
+                y: 0, 
+                opacity: 1, 
+                delay: 0.5, 
+                duration: 1.1
+            }
+        )
+        tl.fromTo(".profile-img",
+            {
+                height: 0,
+            },
+            {
+                height: 400,
+                duration: 1.4,
+                ease: "power2.inOut",
+            },
+            ">-1"
+        )
+        tl.fromTo(".bio-desc3", 
+            {
+                x: -50, 
+                opacity: 0
+            }, 
+            {
+                x: 0, 
+                opacity: 1, 
+                duration: 0.5
+            }
+        )
+        tl.fromTo(".btn",
+            {
+                x: -50,
+                opacity: 0,
+            },
+            {
+                x: 0,
+                opacity: 1,
+                duration: 0.5
+            },
+        )
+
+        let about = document.querySelector('.about-me-background'); 
+        let skills = document.querySelector('.maincontainer-ctn'); 
+        let projects = document.querySelector('.grid'); 
+        let home = document.querySelector('.topWaves'); 
+
+        let nav = document.querySelector('.navigation')
+
+        const li = document.querySelectorAll('.list a'); 
+        const sec = document.querySelectorAll('section'); 
+        console.log(sec)
+
+
+
+        //get section scroll length 
+        //when scrolling, see if the current window scroll length matches the section scroll length
+
+
+        // console.log(scrollY)
+        // console.log(skills.offsetTop) //548 //516 scroll
+                                    // 877 // 876.5 about
+
+        window.addEventListener('scroll', ()=> {
+
+            let aboutSec = about.offsetTop- skills.offsetTop; 
+            let endofAbout = about.offsetTop + aboutSec; 
+
+            let skillsSec = skills.offsetTop - about.offsetTop
+            // let endofSkills = skills.offsetTop + skillsSec; 
+            // let endofSkills = about.offsetTop
+
+            // console.log('this is current ' + window.scrollY)
+            // console.log('this is starting of skills ' + skills.offsetTop)
+            // // console.log('this is end of skills ' + endofSkills)
+            // console.log('this is start of about ' + about.offsetTop)
+
+            const list2 = document.querySelectorAll('.list'); 
+
+            if (window.scrollY >= home.offsetTop && window.scrollY  <= skills.offsetTop) { //this will happen in the home section
+                list2.forEach((item, i) => { //loop through all the nav links 
+                    item.classList.remove('active') //remove active on current
+                }); 
+                let homeLink = document.querySelector('#home-li')
+                homeLink.classList.add('active'); 
+                
+                // nav.style.background = 'purple'
+            } 
+
+            if (window.scrollY >= (about.offsetTop-150) && window.scrollY  <= endofAbout) { //this will happen in the about section
+                list2.forEach((item, i) => { //loop through all the nav links 
+                    item.classList.remove('active') //remove active on current
+                }); 
+                let aboutLink = document.querySelector('#about-li')
+                aboutLink.classList.add('active'); 
+                // nav.style.background = 'purple'
+            } 
+            let secSkills = skills.offsetTop - 100; 
+            if (window.scrollY >= secSkills && window.scrollY  <= about.offsetTop) { //this will happen in the skills section
+                list2.forEach((item, i) => { //loop through all the nav links 
+                    item.classList.remove('active') //remove active on current
+                }); 
+                let skillsLink = document.querySelector('#skills-li')
+                skillsLink.classList.add('active'); 
+                // nav.style.background = 'green' 
+            }
+            let projectsSec = projects.offsetTop - 100; 
+            if (window.scrollY >= projectsSec) { //this will happen in the projects section
+                console.log('in projects section')
+                list2.forEach((item, i) => { //loop through all the nav links 
+                    item.classList.remove('active') //remove active on current
+                }); 
+                let projectsLink = document.querySelector('#projects-li')
+                projectsLink.classList.add('active'); 
+            }
+        })
+
+        // function activeMenu(){
+        //     let len = sec.length; 
+        //     while(--len && window.scrollY + 97 < sec[len].offsetTop){}
+        //     li.forEach(ltx=> ltx.classList.remove('active')); 
+        //     li[len].classList.add('activee'); 
+        // }
+        // activeMenu(); 
+        // window.addEventListener('scroll', activeMenu); 
+
+
+
         const list = document.querySelectorAll('.list'); 
-        console.log(list)
+
 
         function activeLink(){
             list.forEach((item) => 
-            item.classList.remove('active')); 
+            item.classList.remove('active')
+            ); 
             this.classList.add('active')
         }
-        list.forEach((item) => 
-        item.addEventListener('click', activeLink));
+        list.forEach((item) => {
+            item.addEventListener('click', activeLink)
+        });
 
         const header = document.querySelector('.navigation')
         const indicator = document.querySelector('.indicator')
@@ -378,10 +675,11 @@
         window.addEventListener('scroll', () => {
             if (window.scrollY > 50 ){
 
-                header.classList.add('navigationTrans')
-                indicator.classList.add('indicatorTrans')
-                indicatorBefore.classList.add('.indicatorTrans::before')
-                indicatorAfter.classList.add('.indicatorTrans::after')
+                header.classList.add('navigationTrans') //makes navbar transparent
+                indicator.classList.add('indicatorTrans') //makes indicator transparent
+                indicatorBefore.classList.add('.indicatorTrans::before') //makes indicator transparent
+                indicatorAfter.classList.add('.indicatorTrans::after') //makes indicator transparent
+                console.log('hello')
             } else if (window.scrollY <= 50){
                 header.classList.remove('navigationTrans')
                 indicator.classList.remove('indicatorTrans')
@@ -389,6 +687,9 @@
                 indicatorAfter.classList.remove('.indicatorTrans::after')
             }
         })
+
+        // const activePage = window.location.href; 
+        // console.log(activePage);
 
         const button = document.querySelector('.profile-but'); 
         button.addEventListener('click', function(e){
@@ -401,9 +702,9 @@
             this.appendChild(ripples)
         })
 
-        setTimeOut(() => {
-            ripples.remove()
-        }, 1000); 
+        // setTimeOut(() => {
+        //     ripples.remove()
+        // }, 1000); 
     </script>
 
     
