@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300&family=Orbitron:wght@500&display=swap" rel="stylesheet">
@@ -19,8 +20,10 @@
     <!-- <script  src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script> -->
     <script  src="isotope.pkgd.min.js"></script>
     <script  src="script.js"></script>
+    <!-- <script type="module" src="3d.js"></script> -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"> </script>  
 
-    <title>Nice to Meet You!</title>
+    <title>Saim A. Portfolio</title>
 
 </head>
 <body>
@@ -96,32 +99,34 @@
                         <span class="btn-label">Portfolio</span>
                     </button>
                 </div>
-                <div class="img-container">
+                <!-- <div class="img-container">
                     <img class="profile-img" src="img/IMG_6572.jpg"/>
-                </div>
+                </div> -->
+                <!-- <main>
+                <div id="container3D"></div>
+                </main> -->
 
             </div>
 
 
             <div class="skills-header">
-                <h1 id="skills" class="hidden skills-title">Skills</h1>
+                <h1 id="skills" class="skills-title">Skills</h1>
             </div>
 
-            <!-- <div class="paint-bg">
-                <img src='img/watercolorblue.png' />
+            <div class="watercolor-ctn" data-aos="zoom-in-right">
+                <img src='img/watercolorblue.png' style="visibility: visible; animation-duration: 1s; animation-name: zoomIn;"/>
+                <img src='img/orangepaint.png' style="visibility: visible; animation-duration: 1s; animation-name: zoomIn;"/>
+
+            </div>
+
+            <div class="red-paint-bg" data-aos="zoom-in-left">
+                <img class="red-bg" src="img/watercolor-png-29929.png"/>
+                <img class="yellow-bg" src="img/yellowpaint.png"/>
+            </div>
+
+            <!-- <div class="orange-paint-bg">
+                <img src='img/watercolor-png-29929.png' />
             </div> -->
-
-            <!-- <div class="colorful-ctn">
-                <img src='img/colorfulpaint.png' />
-            </div> -->
-
-            <div class="watercolor-ctn">
-                <img src='img/watercolorblue.png' />
-            </div>
-
-            <div class="orange-paint-bg">
-                <img src='img/orangepaint.png' />
-            </div>
 
             
 
@@ -209,10 +214,10 @@
                 <div class="maincontainer">
                     <div class="thecard">
                         <div class="thefront">
-                            <img src="img/salesforce.png"/>
+                            <img class="salesforce-png" src="img/salesforce.png"/>
                         </div>
                         <div class="theback"> 
-                            <img src="img/salesforce.png"/>
+                            <img class="salesforce-png" src="img/salesforce.png"/>
                             <div class="content">
                                 <p>Marketing Cloud</p>
                             </div>
@@ -249,7 +254,7 @@
                 </div> -->
                 <div class="about-me gif-props">
                     <div class="gif">
-                        <img src="img/profile-img.png" /> 
+                        <img src="img/profile-img-edited.png" /> 
                     </div>
                     <div class="about-me-text" id="about">
                         <h1 class="text-down-hidden" >About me</h1>
@@ -293,13 +298,13 @@
                 <div class="about-me">
                     <h1 class="text-down-hidden">In my free time you'll find me...</h1>
                     <div class="personal-gifs">
-                        <img class="left-to-right-hidden gifs" src="img/dunking.gif"/>
-                        <img class="left-to-right-hidden gifs" src="img/family.gif"/>
-                        <img class="left-to-right-hidden gifs" src="img/traveling.gif"/>
+                        <img class="right-to-left-hidden gifs" src="img/dunking.gif"/>
+                        <img class="right-to-left-hidden gifs" src="img/family.gif"/>
+                        <img class="right-to-left-hidden gifs" src="img/traveling.gif"/>
                     </div>
                 </div>
                 <div class="about-me">
-                    <p>Personal development is very important to me and I'm constantly improving my skills and knowledge to get the best results from every campaign. My meticulous attention to detail and ability to work within tight deadlines ensures I deliver projects on time, on budget, and on specification.</p>
+                    <p>ON A NEVER-ENDING GOAL TO LEARN MORE</p>
                 </div>
                 <div class="about-me">
                     <p>Personal development is very important to me and I'm constantly improving my skills and knowledge to get the best results from every campaign. My meticulous attention to detail and ability to work within tight deadlines ensures I deliver projects on time, on budget, and on specification.</p>
@@ -312,13 +317,13 @@
 
 
 
-            <div id="projects" class="hidden projectCtn">
+            <div id="projects" class="projectCtn">
 
                 <div class="project-title">
                     <h1>HTML Emails</h1>
                 </div>
         
-                <div id="filters" class="button-group filters-button-group">
+                <div id="filters" class="hidden button-group filters-button-group">
                     <button class="button is-checked" data-filter="*" ontouchstart
                     >ALL</button>
                     <button class="button" data-filter=".news" ontouchstart
@@ -329,7 +334,7 @@
                     >PROMOTIONAL</button>
                 </div>
                 <!-- <div class="gridCtn"> -->
-                    <section class="grid">
+                    <section class="hidden grid">
                         <!-- <div class="grid-item-ctn"> -->
                             <div class="grid-item news" data-category="news">
 
@@ -380,12 +385,12 @@
                                     <div class="grey-bg">
                                         <div class="project-info">
                                             <div class="project-details">
-                                                Footwear Store2
+                                                Photoshop/MJML
                                             </div>
                                             <div class="project-title">
-                                                E-Commerce Store
+                                                Airline Promotional Email
                                             </div>
-                                            <a href="http://nyckiqs.live/">
+                                            <a href="https://muhammadarif2113.github.io/airline-promo-email/">
                                                 <i class="fas fa-long-arrow-alt-right"></i>
                                             </a>
                                         </div>
@@ -403,12 +408,12 @@
                                     <div class="grey-bg">
                                         <div class="project-info">
                                             <div class="project-details">
-                                                Footwear Store2
+                                                MJML
                                             </div>
                                             <div class="project-title">
-                                                E-Commerce Store
+                                                NBA Store Promotional Email
                                             </div>
-                                            <a href="http://nyckiqs.live/">
+                                            <a href="https://muhammadarif2113.github.io/nbastore-promo-email/">
                                                 <i class="fas fa-long-arrow-alt-right"></i>
                                             </a>
                                         </div>
@@ -470,19 +475,39 @@
 
     <div class="spacer layer2"></div>
 
-    <script>
+<script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            AOS.init({
+			    easing: 'ease-out-back',
+			    duration: 1000
+			});
+		
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if(entry.isIntersecting) {
       entry.target.classList.add('show'); 
       entry.target.classList.add('left-to-right-show');
+      entry.target.classList.add('right-to-left-show');
       entry.target.classList.add('text-down-show');
 
     //   entry.target.classList.add('text-down-show');
     } else {
       entry.target.classList.remove('show'); 
       entry.target.classList.remove('left-to-right-show'); 
+      entry.target.classList.remove('right-to-left-show');
       entry.target.classList.remove('text-down-show'); 
     //   entry.target.classList.remove('text-down-show');
     }
@@ -496,8 +521,14 @@ hiddenElements.forEach((el) => observer.observe(el));
 const hiddenElements2 = document.querySelectorAll('.left-to-right-hidden'); 
 hiddenElements2.forEach((el2) => observer.observe(el2)); 
 
+const hiddenElements4 = document.querySelectorAll('.right-to-left-hidden'); 
+hiddenElements4.forEach((el4) => observer.observe(el4)); 
+
 const hiddenElements3 = document.querySelectorAll('.text-down-hidden'); 
 hiddenElements3.forEach((el3) => observer.observe(el3)); 
+
+// const hiddenElements4 = document.querySelectorAll('.right-to-left-hidden'); 
+// hiddenElements2.forEach((el4) => observer.observe(el4)); 
 
         let tl = gsap.timeline()
 
@@ -534,17 +565,17 @@ hiddenElements3.forEach((el3) => observer.observe(el3));
                 duration: 1.1
             }
         )
-        tl.fromTo(".profile-img",
-            {
-                height: 0,
-            },
-            {
-                height: 400,
-                duration: 1.4,
-                ease: "power2.inOut",
-            },
-            ">-1"
-        )
+        // tl.fromTo(".profile-img",
+        //     {
+        //         height: 0,
+        //     },
+        //     {
+        //         height: 400,
+        //         duration: 1.4,
+        //         ease: "power2.inOut",
+        //     },
+        //     ">-1"
+        // )
         tl.fromTo(".bio-desc3", 
             {
                 x: -50, 
@@ -691,16 +722,16 @@ hiddenElements3.forEach((el3) => observer.observe(el3));
         // const activePage = window.location.href; 
         // console.log(activePage);
 
-        const button = document.querySelector('.profile-but'); 
-        button.addEventListener('click', function(e){
-            let x = e.clientX - e.target.offsetLeft; 
-            let y = e.clientY - e.target.offsetTop; 
+        // const button = document.querySelector('.profile-but'); 
+        // button.addEventListener('click', function(e){
+        //     let x = e.clientX - e.target.offsetLeft; 
+        //     let y = e.clientY - e.target.offsetTop; 
 
-            let ripples = document.createElement('span-but'); 
-            ripples.style.left = x + 'px'; 
-            ripples.style.top = y + 'px'; 
-            this.appendChild(ripples)
-        })
+        //     let ripples = document.createElement('span-but'); 
+        //     ripples.style.left = x + 'px'; 
+        //     ripples.style.top = y + 'px'; 
+        //     this.appendChild(ripples)
+        // })
 
         // setTimeOut(() => {
         //     ripples.remove()
