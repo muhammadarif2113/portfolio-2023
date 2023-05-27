@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css"/>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100&family=Dosis&family=Fira+Sans:ital,wght@1,300&family=Inter:wght@300;400;500;600;700;800&family=Lato:wght@300&family=Merriweather:wght@300&family=Orbitron:wght@500&family=Playfair+Display:wght@400;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100&family=Dosis&family=Fira+Sans:ital,wght@1,300&family=Inter:wght@300;400;500;600;700;800&family=Lato:wght@300&family=Merriweather:wght@300&family=Orbitron:wght@500&family=Playfair+Display:wght@400;800&family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300&family=Orbitron:wght@500&display=swap" rel="stylesheet">
@@ -14,6 +18,7 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
     <script src="animation.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script  src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
@@ -86,6 +91,14 @@
                     </div>
                     
                     <p class="bio-desc3">HTML Email Developer/Content Editor</p>
+
+                    <!-- <p class="one">HTML Email Developer/Content Editor</p>
+                    <p class="two">HTML Email Developer/Content Editor</p>
+                    <p class="three">HTML Email Developer/Content Editor</p>
+                    <p class="four">HTML Email Developer/Content Editor</p>
+                    <p class="five">HTML Email Developer/Content Editor</p>
+                    <p class="six">HTML Email Developer/Content Editor</p> -->
+
                     
                     <!-- <div class="button-ctn-animate">
                         <a href="#" class="profile-but">Portfolio</a>
@@ -238,7 +251,7 @@
             
         </div>
 
-        <section class="hidden about-me-background">
+        <section class=" about-me-background">
             <div class="about-me-ctn">
                 <!-- <div class="gif">
                     <img src="img/giphy.gif" /> 
@@ -248,13 +261,13 @@
                     <h1>What I can do for you...</h1>
                     <p>An HTML Email Developer with a comprehensive understanding of email design. From translating design mockups into HTML email documents, I create original and effective designs that take all project deliverables into account. Personal development is very important to me and I'm constantly improving my skills and knowledge to get the best results from every campaign. My meticulous attention to detail and ability to work within tight deadlines ensures I deliver projects on time, on budget, and on specification.</p>
                 </div> -->
-                <div class="about-me gif-props">
+                <div class="about-me gif-props" id="about-me1">
                     <div class="gif">
                         <img src="img/profile-img-edited.png" /> 
                     </div>
                     <div class="about-me-text" id="about">
-                        <h1 class="text-down-hidden" >About me</h1>
-                        <p>Greetings! I am a skilled and dedicated Email Developer with a passion for crafting engaging and visually appealing email campaigns. With a solid background in coding, design, and marketing, I thrive on leveraging my expertise to create impactful communications that captivate audiences and drive results.</p>
+                        <h1 class="text-down-hidden">About Me</h1>
+                        <p>Greetings! I am a skilled and dedicated <span>Email Developer</span> with a passion for crafting engaging and visually appealing <span>email campaigns</span>. My expertise lies in translating designs into <span>fully functional</span> websites and emails while utilizing my development skills to <span>enhance</span> and <span>customize</span> their features.</p>
                         <div class="personal-details">
                             <div class="email-location">
                                 <ul class="personal">
@@ -285,26 +298,75 @@
                     </div>
 
                 </div>
-                <div class="about-me">
-                    <h1 class="gif-h1 text-down-hidden"> What I can do for you...</h1>
-                    <div class="left-to-right-hidden gif">
+                <div class="about-me gif-props" id="about-me2">
+                    <div class="left-to-right-hidden second-gif">
                         <img src="img/giphy.gif" /> 
                     </div>
+                    <div class="why-me-ctn">
+                        <h1 class="gif-h1 text-down-hidden"> What I can do for you...</h1>
+                        <ul class="why-me">
+
+                            <li>
+                                <div class="why-me-text">
+                                    <span>Email template creation</span>
+                                </div>
+                                <div class="why-me-text2">
+                                    <span>Design and code</span> HTML email templates from scratch or based on provided wireframes. Ensure the templates are <span>responsive</span> and <span>optimized</span> for different screen sizes.
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="why-me-text">
+                                    <span>Cross-browser compatible</span>
+                                </div>
+                                <div class="why-me-text2">
+                                    Write <span>clean and efficient</span> HTML and CSS code. Implement best practices to ensure email <span> rendering consistency</span> across different email clients.                                </div>
+                            </li>
+
+                            <li>
+                                <div class="why-me-text">
+                                    <span>Email marketing tools</span>
+                                </div>
+                                <div class="why-me-text2">
+                                     Create and integrate email templates. Ensure <span>compatibility</span> and <span>troubleshoot</span> any integration issues.
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="why-me-text">
+                                    <span>Identify and resolve</span>
+                                </div>
+                                <div class="why-me-text2">
+                                    Perform <span>testing</span> of email templates across different email clients, web browsers, and devices. <span>Correct</span> and <span>improve</span> rendering issues, broken links, and inconsistencies in the design.
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="why-me-text">
+                                    <span>Trends and best practices</span>
+                                </div>
+                                <div class="why-me-text2">
+                                    Stay up-to-date with the latest <span>trends</span>, best <span>practices</span>, and advancements in email design and development. I <span>strive</span> to improve my <span>skills</span> and <span> knowledge</span> in HTML email development.                                </div>
+                            </li>
+
+                            <!-- <li><span>Cross-browser compatible</span>:Write clean and efficient HTML and CSS code. Implement best practices to ensure email rendering consistency across different email clients.</li>
+                            <li> <span>Identify and resolve</span>:Perform testing of email templates across different email clients, web browsers, and devices. Correct and improve rendering issues, broken links, and inconsistencies in the design.</li>
+                            <li><span>Email marketing platforms and tools</span>: (e.g., Mailchimp, Campaign Monitor, SendGrid) to create and integrate email templates. Ensure compatibility and troubleshoot any integration issues.</li>
+                            <li><span>Trends and best practices</span>:Stay up-to-date with the latest trends, best practices, and advancements in email design and development. I strive to improve my skills and knowledge in HTML email development.</li> -->
+                        </ul>
+                        <!-- <div class="left-to-right-hidden gif">
+                            <img src="img/giphy.gif" /> 
+                        </div> -->
+                    </div>
                 </div>
-                <div class="about-me">
+                <!-- <div class="about-me" id="about-me3">
                     <h1 class="text-down-hidden">In my free time you'll find me...</h1>
                     <div class="personal-gifs">
                         <img class="right-to-left-hidden gifs" src="img/dunking.gif"/>
                         <img class="right-to-left-hidden gifs" src="img/family.gif"/>
                         <img class="right-to-left-hidden gifs" src="img/traveling.gif"/>
                     </div>
-                </div>
-                <div class="about-me">
-                    <p>ON A NEVER-ENDING GOAL TO LEARN MORE</p>
-                </div>
-                <div class="about-me">
-                    <p>Personal development is very important to me and I'm constantly improving my skills and knowledge to get the best results from every campaign. My meticulous attention to detail and ability to work within tight deadlines ensures I deliver projects on time, on budget, and on specification.</p>
-                </div>
+                </div> -->
             </div>
 
         </section>
@@ -549,6 +611,7 @@ hiddenElements3.forEach((el3) => observer.observe(el3));
 
 // const hiddenElements4 = document.querySelectorAll('.right-to-left-hidden'); 
 // hiddenElements2.forEach((el4) => observer.observe(el4)); 
+        gsap.registerPlugin(ScrollTrigger); 
 
         let tl = gsap.timeline()
 
@@ -618,6 +681,59 @@ hiddenElements3.forEach((el3) => observer.observe(el3));
                 duration: 0.5
             },
         )
+
+        gsap.to(".about-me", {
+            y: -400,
+            duration: 1.5,
+            ease: "Bounce.easeIn",
+            scrollTrigger: {
+                trigger: ".about-me",
+                start: "center center",
+                end: "center center",
+                toggleActions: "play none reverse reverse",
+                // toggleActions: "play none none reverse",
+                        //      onEnter onLeave onEnterBack onLeaveBack
+                // markers: true 
+            } 
+        })
+
+        // gsap.to(".about-me", {
+        //     y: -850,
+        //     // ease: "Bounce.easeIn",
+        //     scrollTrigger: {
+        //         trigger: ".about-me",
+        //         start: "top 10%", 
+        //         // toggleActions: "play none none reverse",
+        //         toggleActions: "play none reverse reverse",
+        //                 //      onEnter onLeave onEnterBack onLeaveBack
+        //         // markers: true 
+
+        //     } 
+        // })
+
+        // gsap.fromTo(".about-me",
+        // {
+        //     y: 0,
+        //     duration: 2,
+        //     // ease: "Bounce.easeIn",
+        //     scrollTrigger: {
+        //         trigger: ".about-me",
+        //         start: "center center",
+        //         markers: true
+        //     }
+        // }, 
+        // {
+        //     y: -450,
+        //     duration: 2,
+        //     // ease: "Bounce.easeIn",
+        //     scrollTrigger: {
+        //         trigger: ".about-me",
+        //         start: "top top"
+        //     } 
+        // })
+
+
+
 
         let about = document.querySelector('.about-me-background'); 
         let skills = document.querySelector('.maincontainer-ctn'); 
