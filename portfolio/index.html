@@ -86,6 +86,9 @@
             <div class="bubble-content">
                 <div class="profile-text">
                     <div class="name-profile">
+                        <div class="name-profile-ctn">
+                            <img src="img/profile-img-edited.png" /> 
+                        </div>
                         <p class="bio-desc1">Hello, I'm</p>
                         <p class="bio-desc2">M. Saim <span>Arif</span></p>
                     </div>
@@ -109,7 +112,7 @@
                         <span class="btn-paint"></span>
                         <span class="btn-paint"></span>
                         <span class="btn-paint"></span>
-                        <span class="btn-label">Portfolio</span>
+                        <span class="btn-label"> <a href="#projects">Portfolio</a></span>
                     </button>
                 </div>
                 <!-- <div class="img-container">
@@ -267,7 +270,7 @@
                     </div>
                     <div class="about-me-text" id="about">
                         <h1 class="text-down-hidden">About Me</h1>
-                        <p>Greetings! I am a skilled and dedicated <span>Email Developer</span> with a passion for crafting engaging and visually appealing <span>email campaigns</span>. My expertise lies in translating designs into <span>fully functional</span> websites and emails while utilizing my development skills to <span>enhance</span> and <span>customize</span> their features.</p>
+                        <p>Greetings! I am a skilled and dedicated <span class="green-txt">Email Developer</span> with a passion for crafting engaging and visually appealing <span class="green-txt">email campaigns</span>. My expertise lies in translating designs into <span class="green-txt">fully functional</span> websites and emails while utilizing my development skills to <span class="green-txt">enhance</span> and <span class="green-txt">customize</span> their features.</p>
                         <div class="personal-details">
                             <div class="email-location">
                                 <ul class="personal">
@@ -286,7 +289,7 @@
                                 <ul class="personal">
                                     <li>
                                         <h3>Education</h3>
-                                        <p>Bachelor's of Science, Computer Information Systems</p>
+                                        <p>Computer Information Systems, BS</p>
                                     </li>
                                     <li>
                                         <h3>Employment</h3>
@@ -299,9 +302,6 @@
 
                 </div>
                 <div class="about-me gif-props" id="about-me2">
-                    <div class="left-to-right-hidden second-gif">
-                        <img src="img/giphy.gif" /> 
-                    </div>
                     <div class="why-me-ctn">
                         <h1 class="gif-h1 text-down-hidden"> What I can do for you...</h1>
                         <ul class="why-me">
@@ -358,6 +358,9 @@
                             <img src="img/giphy.gif" /> 
                         </div> -->
                     </div>
+                    <div class="left-to-right-hidden second-gif">
+                        <img src="img/giphy.gif" /> 
+                    </div>
                 </div>
                 <!-- <div class="about-me" id="about-me3">
                     <h1 class="text-down-hidden">In my free time you'll find me...</h1>
@@ -405,7 +408,7 @@
                                             <div class="project-title">
                                                 Apple Newsletter Clone
                                             </div>
-                                            <a href="http://nyckiqs.live/">
+                                            <a href="/Apple Newsletter.html">
                                                 <i class="fas fa-long-arrow-alt-right"></i>
                                             </a>
                                         </div>
@@ -554,7 +557,7 @@
             <li><a href="#">About</a></li>
             <li><a href="#">Portfolio</a></li>
         </ul>
-        <p>@2023 Saim Arif</p>
+        <p>@ 2023 Saim A.</p>
     </footer>
 
 <script>
@@ -682,9 +685,16 @@ hiddenElements3.forEach((el3) => observer.observe(el3));
             },
         )
 
+        var aboutMeHeight = document.querySelector('.about-me')
+        console.log(aboutMeHeight.clientHeight); 
+
+        var aboutHeight = aboutMeHeight.clientHeight * -1; 
+        console.log(aboutHeight); 
+
+
         gsap.to(".about-me", {
-            y: -400,
-            duration: 1.5,
+            y: aboutHeight + -30,
+            duration: 1.2,
             ease: "Bounce.easeIn",
             scrollTrigger: {
                 trigger: ".about-me",
@@ -723,7 +733,7 @@ hiddenElements3.forEach((el3) => observer.observe(el3));
         //     }
         // }, 
         // {
-        //     y: -450,
+        //     y: -500,
         //     duration: 2,
         //     // ease: "Bounce.easeIn",
         //     scrollTrigger: {
@@ -744,7 +754,7 @@ hiddenElements3.forEach((el3) => observer.observe(el3));
 
         const li = document.querySelectorAll('.list a'); 
         const sec = document.querySelectorAll('section'); 
-        console.log(sec)
+        // console.log(sec)
 
 
 
@@ -801,7 +811,7 @@ hiddenElements3.forEach((el3) => observer.observe(el3));
             }
             let projectsSec = projects.offsetTop - 100; 
             if (window.scrollY >= projectsSec) { //this will happen in the projects section
-                console.log('in projects section')
+                // console.log('in projects section')
                 list2.forEach((item, i) => { //loop through all the nav links 
                     item.classList.remove('active') //remove active on current
                 }); 
@@ -844,14 +854,14 @@ hiddenElements3.forEach((el3) => observer.observe(el3));
 
                 header.classList.add('navigationTrans') //makes navbar transparent
                 indicator.classList.add('indicatorTrans') //makes indicator transparent
-                indicatorBefore.classList.add('.indicatorTrans::before') //makes indicator transparent
-                indicatorAfter.classList.add('.indicatorTrans::after') //makes indicator transparent
-                console.log('hello')
+                // indicatorBefore.classList.add('.indicatorTrans::before') //makes indicator transparent
+                // indicatorAfter.classList.add('.indicatorTrans::after') //makes indicator transparent
+                // console.log('hello')
             } else if (window.scrollY <= 50){
                 header.classList.remove('navigationTrans')
                 indicator.classList.remove('indicatorTrans')
-                indicatorBefore.classList.remove('.indicatorTrans::before')
-                indicatorAfter.classList.remove('.indicatorTrans::after')
+                // indicatorBefore.classList.remove('.indicatorTrans::before')
+                // indicatorAfter.classList.remove('.indicatorTrans::after')
             }
         })
 
