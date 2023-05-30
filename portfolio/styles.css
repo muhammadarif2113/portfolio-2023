@@ -134,10 +134,10 @@ font-size: 30px;
 }
 
 .layer1{
-    background-image: url('./layered-waves-haikei (4).svg');
+    background-image: url('img/layered-waves-haikei (4).svg');
 }
 .layer2{
-    background-image: url('./layered-waves-haikei (3).svg');
+    background-image: url('img/layered-waves-haikei (3).svg');
 }
 
 .bubble::after{
@@ -505,7 +505,7 @@ font-size: 30px;
 .about-me-background::before{
     width: 100%;
     content: "";
-    background: url('./img/flower4.jpg');
+    background: url('./img-com/flower4.jpg');
     background-attachment: fixed;
     position: absolute;
     top: 0px;
@@ -1058,7 +1058,7 @@ span-but{
 }
 
 .paint-bg{
-    background: url('img/bluepaint.png');
+    background: url('img-com/bluepaint.png');
     position: absolute;
     top: 0;
     right: 0;
@@ -1220,7 +1220,7 @@ span-but{
 }
 .project-box{
     display: block;
-    background: url(img/Apple-Newsletter2.png) no-repeat;
+    background: url(img-com/Apple-Newsletter2.png) no-repeat;
     background-size: cover; 
     width: 100%;
     height: 100%;
@@ -1237,7 +1237,7 @@ span-but{
 
 .project-box2{
     display: block;
-    background: url(img/travel-promo3.png) no-repeat;
+    background: url(img-com/travel-promo3.png) no-repeat;
     background-size: cover;
     width: 100%;
     height: 100%;
@@ -1253,7 +1253,7 @@ span-but{
 
 .project-box3{
     display: block;
-    background: url(img/nba-email2.png) no-repeat;
+    background: url(img-com/nba-email2.png) no-repeat;
     background-size: cover;
     width: 100%;
     height: 100%;
@@ -1524,7 +1524,7 @@ span-but{
     left: 0;
     width: 100%;
     height: 100px;
-    background: url('img/wave.png');
+    background: url('img-com/wave.png');
     background-size: 1000px 100px;
   }
 
@@ -1732,7 +1732,6 @@ span-but{
 
 
     .about-me-ctn{
-        border: 1px solid purple;
         width: 100%;
         height: 500px;
     }
@@ -1813,11 +1812,13 @@ span-but{
     }
 
     .watercolor-ctn{
-        top: 700px;
+        top: 600px;
+        left: 25px;
     }
 
     .watercolor-ctn img{
         opacity: 0.7;
+        width: 300px;
     }
 
     .red-paint-bg{
@@ -1827,6 +1828,8 @@ span-but{
 
     .red-paint-bg img{
         opacity: 0.7;
+        width: 200px;
+
     }
 
     .navigationTrans{
