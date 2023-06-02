@@ -17,6 +17,7 @@
     <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Opensans"> -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -91,7 +92,6 @@
                         <p class="bio-desc1">Hello, I'm</p>
                         <p class="bio-desc2">M. Saim <span>Arif</span></p>
                     </div>
-                    
                     <p class="bio-desc3">HTML Email Developer/Content Editor</p>
 
                     <!-- <p class="one">HTML Email Developer/Content Editor</p>
@@ -373,6 +373,10 @@
 
         </section>
 
+        <div class="spiral" >
+            <img src="img-com/blue-swil.png" data-aos="rotate-ac"/>
+        </div>
+
 
 
 
@@ -401,11 +405,11 @@
                                 <div class="project-box">
                                     <div class="grey-bg">
                                         <div class="project-info">
-                                            <div class="project-details">
-                                                HTML Email
+                                            <div class="project-details" id="project-details1">
+                                                HTML Email - Foundation Framework
                                             </div>
-                                            <div class="project-title">
-                                                Apple Newsletter Clone
+                                            <div class="project-title" id="project-title1">
+                                                Apple Newsletter Email
                                             </div>
                                             <a href="/Apple Newsletter.html">
                                                 <i class="fas fa-long-arrow-alt-right"></i>
@@ -421,16 +425,16 @@
                             </div>
                             <div class="grid-item trans" data-category="trans">
 
-                                <div class="project-box">
+                                <div class="project-box1">
                                     <div class="grey-bg">
                                         <div class="project-info">
-                                            <div class="project-details">
-                                                Footwear Store2
+                                            <div class="project-details" id="project-details2">
+                                                HTML Email - MJML
                                             </div>
-                                            <div class="project-title">
-                                                E-Commerce Store
+                                            <div class="project-title" id="project-title2">
+                                                MyProtein Transactional Email 
                                             </div>
-                                            <a href="http://nyckiqs.live/">
+                                            <a href="https://muhammadarif2113.github.io/transactional-email/">
                                                 <i class="fas fa-long-arrow-alt-right"></i>
                                             </a>
                                         </div>
@@ -444,10 +448,10 @@
                                 <div class="project-box2">
                                     <div class="grey-bg">
                                         <div class="project-info">
-                                            <div class="project-details">
-                                                Photoshop/MJML
+                                            <div class="project-details" id="project-details3">
+                                                HTML Email - Photoshop/MJML
                                             </div>
-                                            <div class="project-title">
+                                            <div class="project-title" id="project-title3">
                                                 Airline Promotional Email
                                             </div>
                                             <a href="https://muhammadarif2113.github.io/airline-promo-email/">
@@ -467,10 +471,10 @@
                                 <div class="project-box3">
                                     <div class="grey-bg">
                                         <div class="project-info">
-                                            <div class="project-details">
-                                                MJML
+                                            <div class="project-details" id="project-details4">
+                                                HTML Email - MJML
                                             </div>
-                                            <div class="project-title">
+                                            <div class="project-title" id="project-title4">
                                                 NBA Store Promotional Email
                                             </div>
                                             <a href="https://muhammadarif2113.github.io/nbastore-promo-email/">
@@ -489,10 +493,10 @@
                                 <div class="project-box">
                                     <div class="grey-bg">
                                         <div class="project-info">
-                                            <div class="project-details">
+                                            <div class="project-details" id="project-details5">
                                                 blank
                                             </div>
-                                            <div class="project-title">
+                                            <div class="project-title" id="project-title5">
                                                 E-Commerce Store
                                             </div>
                                             <a href="http://nyckiqs.live/">
@@ -508,10 +512,10 @@
                                 <div class="project-box">
                                     <div class="grey-bg">
                                         <div class="project-info">
-                                            <div class="project-details">
+                                            <div class="project-details" id="project-details6">
                                                 blank
                                             </div>
-                                            <div class="project-title">
+                                            <div class="project-title" id="project-title6">
                                                 E-Commerce Store
                                             </div>
                                             <a href="http://nyckiqs.live/">
@@ -561,16 +565,7 @@
 
 <script>
 
-
-
-
-
-
-
-
-
-
-
+   
 
 
             AOS.init({
