@@ -401,20 +401,15 @@ font-size: 30px;
 
 .navigation ul li:nth-child(2).active ~ .indicator{
     transform: translateX(87px);
-    /* transform: translateX(6vw); */
 }
 
 .navigation ul li:nth-child(3).active ~ .indicator{
-    transform: translateX(170px);
-    /* transform: translateX(11vw); */
+    transform: translateX(180px);
 }
 
 .navigation ul li:nth-child(4).active ~ .indicator{
-    transform: translateX(260px);
-    /* transform: translateX(17vw); */
+    transform: translateX(271px);
 }
-
-
 
 .navbar .nav-logo{
     padding: 0;
@@ -778,6 +773,11 @@ font-size: 30px;
 
 }
 
+.github-link{
+    font-size: 1.5rem;
+    margin-top: 15px;
+}
+
 /* .project-section{
     border: 1px solid black;
     text-align: center;
@@ -993,14 +993,8 @@ span-but{
 
 }
 
-/* .orange-paint-bg img{
-    height: 400px;
-} */
-
 .red-paint-bg{
     position: relative;
-    opacity: 0.9;
-
 }
 
 .red-paint-bg img{
@@ -1008,8 +1002,6 @@ span-but{
     width: 400px;
     right: 0;
     opacity: 0.9;
-
-    /* transform: rotate(179deg); */
 }
 
 .red-bg{
@@ -1726,9 +1718,9 @@ span-but{
 
 
 @media screen and (max-width: 1040px) {
-    body {
+    /* body {
         background: lightgreen;
-    }
+    } */
     .topWaves.spacer.layer1.bubble{
         width: 100%;
 
@@ -1909,7 +1901,7 @@ span-but{
     .name-profile img{
         display: block;
         width: 60%;
-        min-width: 310px; 
+        /* min-width: 310px;  */
     }
 
     .nav-logo{
@@ -2049,13 +2041,44 @@ span-but{
   } */
 
   @media screen and (max-width: 405px) {
+    body{
+        background-color: pink;
+    }
     .nav-header, .navigation, .navigationTrans{
-        width: 100%;
-        padding: 0;
-        margin: 5px 0 0 0;
+        /* width: 100%; */
+        /* padding: 0; */
+        /* margin: 5px 0 0 0; */
+    }
+
+    .navigation{
+        margin: 5px 0 0 0; 
     }
 
     .navigationTrans{
         margin-top: 80px;
+    }
+
+    .name-profile-ctn img{
+        width: 50%;
+    }
+
+    .skills-title{
+        margin-top: 200px;
+    }
+
+    .about-me-background{
+        margin-top: 100px;
+    }
+
+    .projectCtn{
+        margin-top: 370px;
+    }
+
+    footer{
+        padding: 0 0 75px 0;
+    }
+
+    footer p {
+        margin: 50px 0 0 0;
     }
   }
