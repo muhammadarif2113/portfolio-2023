@@ -1850,9 +1850,9 @@ span-but{
   }
 
   @media screen and (max-width: 767px) {
-    /* body {
-        background: orange;
-    } */
+    .navigation{
+        margin-left: 20px;
+    }
     .grid-item{
         width: 97%;
     }
@@ -1985,69 +1985,15 @@ span-but{
         display: none;
     }
 
-
-    /* .thecard{
-        width: 100%;
-    } */
-
-    .nav-header, .navigationTrans{
-        /* margin: 30px 50px 0 20px; */
-        /* padding: 20px; */
-    }
-    .navigation ul li:nth-child(1).active ~ .indicator{
-        /* transform: translateX(2vw); */
-        /* margin-left: 1%; */
-    
-    }
-
-    .navigation ul li:nth-child(2).active ~ .indicator{
-        /* transform: translateX(20vw); */
-        /* transform: translateX(70%) */
-        /* margin-left: 12%; */
-    
-    }
-    
-    .navigation ul li:nth-child(3).active ~ .indicator{
-        /* transform: translateX(42vw); */
-    
-    }
-    
-    .navigation ul li:nth-child(4).active ~ .indicator{
-        /* transform: translateX(62vw); */
-    
-    }
   }
 
-  /* @media screen and (max-width: 337px) {
-    .navigation ul li:nth-child(1).active ~ .indicator{
-
-    
-    }
-
-    .navigation ul li:nth-child(2).active ~ .indicator{
-        transform: translateX(20vw);
-    
-    }
-    
-    .navigation ul li:nth-child(3).active ~ .indicator{
-        transform: translateX(42vw);
-    
-    }
-    
-    .navigation ul li:nth-child(4).active ~ .indicator{
-        transform: translateX(65vw);
-    
-    }
-  } */
 
   @media screen and (max-width: 405px) {
-    body{
+    /* body{
         background-color: pink;
-    }
+    } */
     .nav-header, .navigation, .navigationTrans{
-        /* width: 100%; */
-        /* padding: 0; */
-        /* margin: 5px 0 0 0; */
+        width: 100%;
     }
 
     .navigation{
