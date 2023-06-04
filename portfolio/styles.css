@@ -2,10 +2,11 @@
 
 html{
     scroll-behavior: smooth;
+
 }
 
 body{
-    margin: 0;
+    margin: 0 !important;
     font-family: 'Prompt', sans-serif;
     color: black;
     /* background: #769FCD; */
@@ -15,6 +16,8 @@ body{
     overflow-x: hidden;
     overflow-y: scroll; */
 }
+
+
 
 /* .section{
     position: relative;
@@ -1229,11 +1232,11 @@ span-but{
     position: relative;
 }
 
-.spiral img{
+/* .spiral img{
     position: absolute;
     margin-left: 800px;
 
-}
+} */
 .project-box{
     display: block;
     background: url(img-com/Apple-Newsletter2.png) no-repeat;
@@ -1690,10 +1693,10 @@ span-but{
   
 
 @media screen and (max-width: 1639px) {
-    body {
-        /* background: yellow; */
+    /* body {
+        background: yellow;
 
-    }
+    } */
     .content-area, .projectCtn, .about-me-ctn{
         width: 75%;
     }
@@ -1754,6 +1757,12 @@ span-but{
     .bubble::after{
         border-radius: 0;
     }
+    /* .watercolor-ctn img{
+        margin-left: 160px;
+    } */
+    .red-paint-bg img{
+        margin-right: 60px;
+    }
     .grid{
         padding: 0 0 0 2px; 
     }
@@ -1813,7 +1822,7 @@ span-but{
     }
 
     .maincontainer-ctn{
-        margin: 0 20px;
+        padding: 0 20px;
     }
 
     .gif{
@@ -1850,8 +1859,14 @@ span-but{
   }
 
   @media screen and (max-width: 767px) {
+    /* body{
+        background: #670000;
+    } */
     .navigation{
         margin-left: 20px;
+    }
+    .thefront img, .theback img{
+        padding: 5px 10px 15px 10px;
     }
     .grid-item{
         width: 97%;
@@ -1985,6 +2000,14 @@ span-but{
         display: none;
     }
 
+    footer{
+        padding: 0 0 75px 0;
+    }
+
+    footer p {
+        margin: 50px 0 0 0;
+    }
+
   }
 
 
@@ -2018,13 +2041,5 @@ span-but{
 
     .projectCtn{
         margin-top: 370px;
-    }
-
-    footer{
-        padding: 0 0 75px 0;
-    }
-
-    footer p {
-        margin: 50px 0 0 0;
     }
   }
