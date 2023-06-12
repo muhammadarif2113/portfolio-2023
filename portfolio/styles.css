@@ -220,18 +220,26 @@ font-size: 30px;
 }
 
 .name-profile img{
-    /* display: none; */
-    /* border: 1px solid black; */
     border-radius: 200px;
     width: 60%;
     min-width: 240px;
+    border: 5px solid white;
+}
+
+
+.float{
     animation: float 2s ease-out infinite;
 }
+
 
 @keyframes float {
     50% {
         transform: translate(0, 20px);
     }
+}
+
+@keyframes float-hr {
+    50%  { transform: translate(20px, 0); }
 }
 
 
@@ -272,7 +280,7 @@ font-size: 30px;
     /* outline: 1px solid #f1564e; */
     /* border-bottom: none; */
     margin-top: 5px;
-    margin: 5px 0 0 5px;
+    margin: 5px 0 0 0;
 }
 
 .icon ion-icon{
@@ -2072,7 +2080,23 @@ span-but{
         justify-content: center;
         align-items: center;
         text-align: center;
-        padding-top: 90px;
+        padding-top: 55px;
+    }
+    .bio-desc1{
+        font-size: 26px;
+    }
+    .bio-desc2{
+        font-size: 45px;
+    }
+    .bio-desc3{
+        font-size: 20px;
+        margin: 10px 0 20px 0;
+    }
+    .btn-label{
+        font-size: 22px;
+    }
+    .btn{
+        padding: 10px 30px;
     }
 
     .name-profile-ctn img{
@@ -2207,8 +2231,12 @@ span-but{
 
     .nav-logo{
         position: absolute;
-        margin: 200px 0 0 0;
+        margin: 160px 0 0 0;
         rotate: 3deg;
+    }
+
+    .nav-logo img{
+        animation: float-hr 1.5s ease-out infinite;
     }
 
 
