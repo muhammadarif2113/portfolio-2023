@@ -9,24 +9,24 @@ body{
     margin: 0 !important;
     font-family: 'Prompt', sans-serif;
     color: black;
-    /* background: #769FCD; */
-    /* perspective: 1px;
-    transform-style: preserve-3d;
-    height: 100%;
-    overflow-x: hidden;
-    overflow-y: scroll; */
 }
 
+.skills-placeholder{
+    margin-top: 250px;
+    position: absolute;
+    border: 1px solid black;
+    visibility: hidden;
+}
+.about-placeholder{
+    position: absolute;
+    visibility: hidden;
+}
+.projects-placeholder{
+    margin-top: 300px;
+    position: absolute;
+    visibility: hidden;
+}
 
-
-/* .section{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 400px;
-    padding: 100px 20vw;
-} */
 
 .one{
 font-family: 'Inter';
@@ -221,9 +221,9 @@ font-size: 30px;
 
 .name-profile img{
     border-radius: 200px;
-    width: 60%;
+    width: 70%;
     min-width: 240px;
-    border: 5px solid white;
+    border: 3px solid #f1564e;
 }
 
 
@@ -814,7 +814,7 @@ font-size: 30px;
     text-align: center;
     width: 1245px; 
     margin: 0 auto;
-    margin-top: 200px;
+    margin-top: 500px;
 
 }
 
@@ -1488,6 +1488,13 @@ span-but{
     margin-bottom: 20px;
   }
 
+  .colorful{
+    background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #f6ff00, #f9a825, #ff5722);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+
   #project-title1, #project-details1{
     color: purple;
   }
@@ -1512,18 +1519,31 @@ span-but{
     color: purple;
   }
 
+  .project-explain{
+    font-size: 1.1rem;
+    line-height: 25px;
+    color: #000000;
+    font-weight: 500;
+
+  }
+
   /* .button:hover:nth-child(1), .button:nth-child(1):focus{
     color: #046a00;
 } */
 
-  .project-box .grey-bg .project-info {
+  .project-box .grey-bg .project-info, 
+  .project-box1 .grey-bg .project-info, 
+  .project-box2 .grey-bg .project-info, 
+  .project-box3 .grey-bg .project-info, 
+  .project-box4 .grey-bg .project-info,
+  .project-box5 .grey-bg .project-info {
     padding: 56px;
     position: absolute;
-    margin-top: 100px;
+    /* margin-top: 100px; */
     width: 100%;
   }
 
-  .project-box1 .grey-bg .project-info {
+  /* .project-box1 .grey-bg .project-info {
     padding: 56px;
     position: absolute;
     margin-top: 100px;
@@ -1556,7 +1576,7 @@ span-but{
     position: absolute;
     margin-top: 100px;
     width: 100%;
-  }
+  } */
 
 
 
@@ -1765,7 +1785,7 @@ span-but{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 200px;
+    margin-top: 500px;
   }
 
   footer .social-icon, footer .menu{
@@ -1871,49 +1891,48 @@ span-but{
     }
   }
 
-/* @media screen and (max-width: 1363px){
-    .why-me-text{
-        font-size: 15px;
-        border: 2px solid black;
+@media screen and (min-width: 1639px) {
+    /* body {
+        background: yellow;
+    } */
+    .bubble-content{
+        margin-top: 200px;
     }
-    .why-me-text2{
-        font-size: 14px;
+    .skills-header{
+        margin-top: 600px;
     }
-} */
-
+    .about-me-background{
+        margin-top: 500px;
+    }
+    .bio-desc1{
+        font-size: 45px; 
+    }
+    .bio-desc2{
+        font-size: 85px;
+    }
+    .bio-desc3{
+        font-size: 28px;
+        margin-top: 0;
+    }
+    .name-profile-ctn img{
+        width: 90%;
+    }
+}
   
 
 @media screen and (max-width: 1639px) {
-    /* body {
-        background: yellow;
-
-    } */
     .content-area, .projectCtn, .about-me-ctn{
         width: 75%;
     }
-    /* .bubble::after{
-        content: ''; 
-        border-radius: 100% / 0 0 40% 40%; */
-    /* .bubble::after{
-        border-radius: none;
-    } */
-    /* .grid{
-        padding-left: 15px; 
-    } */
-    
-    .grid-item {
-        /* width: 32%; */
-        /* min-width: 267px; */
-        /* margin: 2px; */
-
+    .skills-header{
+        margin-top: 650px;
     }
-
+    .about-me-background{
+        margin-top: 500px;
+    }
 }
 
 @media screen and (max-width: 1408px) and (min-width: 1040px) {
-    /* body{
-        background-color: #fff112;
-    } */
     .grid-item{
         width: 47%;
         margin: 10px!important;
@@ -1921,9 +1940,6 @@ span-but{
 }
 
 @media screen and (max-width: 1040px) {
-    /* body{
-        background: purple;
-    } */
     .bubble-content{
         width: 100%;
         flex-direction: column-reverse;
@@ -1933,9 +1949,6 @@ span-but{
         margin-top: 30px;
 
     }
-    /* .bubble::after{
-        border-radius: 0;
-    } */
     .name-profile{
         flex-direction: column-reverse;
     }
@@ -1954,34 +1967,11 @@ span-but{
 }
 
 @media screen and (min-width: 767px) and (max-width: 1040px) {
-    /* body{
-        background: lightcoral;
-    } */
     .topWaves.spacer.layer1.bubble{
         width: 100%;
     }
-    /* .bubble-content{
-        width: 100%;
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        margin-top: 30px;
-
-    }
-    .bubble::after{
-        border-radius: 0;
-    }
-    .name-profile{
-        flex-direction: column-reverse;
-    }
-    .name-profile-ctn img{
-        width: 20%;
-    } */
-
     .profile-text{
         margin: 0;
-        /* border: 1px solid black; */
     }
 
     .red-paint-bg img{
@@ -2060,16 +2050,8 @@ span-but{
   }
 
   @media screen and (max-width: 767px) {
-    /* body{
-        background: pink;
-    } */
-    /* .bubble::after{
-        border-radius: 0;
-    } */
-
     .profile-text{
         margin: 0;
-        /* border: 1px solid black; */
     }
     .btn{
         position: relative;
@@ -2113,10 +2095,6 @@ span-but{
     .skills-header{
         margin-top: 200px;
     }
-
-    /* .navigation{
-        margin-right: 20px; 
-    } */
 
     .watercolor-ctn{
         margin-left: 200px;
@@ -2348,6 +2326,30 @@ span-but{
 
     .about-me-background{
         margin-top: 100px;
+    }
+
+    .about-me-text h1{
+        font-size: 2.0rem;
+        margin: 10px 0;
+    }
+
+    .why-me{
+        margin-top: 0;
+    }
+
+    .why-me-ctn h1{
+        font-size: 1.7rem;
+    }
+
+    .email-location, .education-employment{
+        width: 100%;
+        display: block;
+    }
+    .personal{
+        margin: 0;
+    }
+    .employment{
+        display: none;
     }
 
     .projectCtn{

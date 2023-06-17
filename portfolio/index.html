@@ -23,7 +23,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300&family=Orbitron:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Opensans"> -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
@@ -31,22 +30,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script  src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
-    <!-- <script  src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script> -->
     <script  src="isotope.pkgd.min.js"></script>
-    <script  src="script.js"></script>
-    <!-- <script type="module" src="3d.js"></script> -->
+    <script  src="isotope-jquery.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"> </script>  
-
     <title>Saim A. Portfolio</title>
-
 </head>
 
 <body>
-    
     <div class="topWaves spacer layer1 bubble" id="home">
-        <div class="content-area"> 
+        <div class="content-area">
             <header class="nav-header">
-                <a class="nav-logo" href="http://127.0.0.1:5500/index.html">
+                <a class="nav-logo" href="https://saimdev.com/">
                     <img class="float-hr" src="img-com/Saim.Dev-5 (1).png" />
                 </a>
                 <div class="navigation">
@@ -59,7 +53,7 @@
                                 <span class="text">Home</span>
                             </a>
                         </li>
-    
+
                         <li id="skills-li" class="list">
                             <a href="#skills">
                                 <span class="icon">
@@ -68,16 +62,16 @@
                                 <span class="text">Skills</span>
                             </a>
                         </li>
-    
+
                         <li id="about-li" class="list">
                             <a href="#about">
                                 <span class="icon">
-                                    <ion-icon name="help-circle"></ion-icon>                            
+                                    <ion-icon name="help-circle"></ion-icon>
                                 </span>
                                 <span class="text">About</span>
                             </a>
                         </li>
-    
+
                         <li id="projects-li" class="list">
                             <a href="#projects">
                                 <span class="icon">
@@ -92,7 +86,7 @@
             </header>
 
 
-        
+
             <div class="bubble-content">
                 <div class="profile-text">
                     <div class="name-profile">
@@ -110,52 +104,32 @@
                         </div>
 
                         <div class="name-profile-ctn">
-                            <img class="float" src="/img-com/client-1-min.png"/>
+                            <img class="float" src="/img-com/client-1-min-white.png" />
 
                         </div>
-                    
+
                     </div>
-                    <!-- <p class="bio-desc3">HTML Email Developer/Content Editor</p> -->
-
-                    <!-- <p class="one">HTML Email Developer/Content Editor</p>
-                    <p class="two">HTML Email Developer/Content Editor</p>
-                    <p class="three">HTML Email Developer/Content Editor</p>
-                    <p class="four">HTML Email Developer/Content Editor</p>
-                    <p class="five">HTML Email Developer/Content Editor</p>
-                    <p class="six">HTML Email Developer/Content Editor</p> -->
-
-                    
-                    <!-- <div class="button-ctn-animate">
-                        <a href="#" class="profile-but">Portfolio</a>
-                    </div> -->
-
-                    <!-- <button class="btn">
-                        <span class="btn-paint"></span>
-                        <span class="btn-paint"></span>
-                        <span class="btn-paint"></span>
-                        <span class="btn-paint"></span>
-                        <span class="btn-label"> <a href="#projects">Portfolio</a></span>
-                    </button> -->
                 </div>
-                <!-- <div class="img-container">
-                    <img class="profile-img" src="img-com/IMG_6572.jpg"/>
-                </div> -->
             </div>
+
+            <h1 id="skills" class="skills-placeholder">Skills</h1>
 
 
             <div class="skills-header">
-                <h1 id="skills" class="skills-title">Skills</h1>
+                <h1 class="skills-title">Skills</h1>
             </div>
 
             <div class="watercolor-ctn" data-aos="zoom-in-right">
-                <img src='img-com/watercolorblue.png' style="visibility: visible; animation-duration: 1s; animation-name: zoomIn;"/>
-                <img src='img-com/orangepaint.png' style="visibility: visible; animation-duration: 1s; animation-name: zoomIn;"/>
+                <img src='img-com/watercolorblue.png'
+                    style="visibility: visible; animation-duration: 1s; animation-name: zoomIn;" />
+                <img src='img-com/orangepaint.png'
+                    style="visibility: visible; animation-duration: 1s; animation-name: zoomIn;" />
 
             </div>
 
             <div class="red-paint-bg" data-aos="zoom-in-left">
-                <img class="red-bg" src="img-com/watercolor-png-29929.png"/>
-                <img class="yellow-bg" src="img-com/yellowpaint.png"/>
+                <img class="red-bg" src="img-com/watercolor-png-29929.png" />
+                <img class="yellow-bg" src="img-com/yellowpaint.png" />
             </div>
 
 
@@ -164,10 +138,10 @@
                 <div class="maincontainer">
                     <div class="thecard">
                         <div class="thefront">
-                            <img src="img-com/html.png"/>
+                            <img src="img-com/html.png" />
                         </div>
-                        <div class="theback"> 
-                            <img src="img-com/html.png"/>
+                        <div class="theback">
+                            <img src="img-com/html.png" />
                             <div class="content">
                                 <p>HTML</p>
                             </div>
@@ -178,386 +152,401 @@
                 <div class="maincontainer">
                     <div class="thecard">
                         <div class="thefront">
-                            <img src="img-com/css.png"/>
+                            <img src="img-com/css.png" />
                         </div>
-                        <div class="theback"> 
-                            <img src="img-com/css.png"/>
+                        <div class="theback">
+                            <img src="img-com/css.png" />
                             <div class="content">
                                 <p>CSS</p>
                             </div>
-                        </div>                </div>
+                        </div>
+                    </div>
                 </div>
-                
+
                 <div class="maincontainer">
                     <div class="thecard">
                         <div class="thefront">
-                            <img src="img-com/responsive.png"/>
+                            <img src="img-com/responsive.png" />
                         </div>
-                        <div class="theback"> 
-                            <img src="img-com/responsive.png"/>
+                        <div class="theback">
+                            <img src="img-com/responsive.png" />
                             <div class="content">
                                 <p>Responsive Design</p>
                             </div>
-                        </div>                </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="maincontainer">
                     <div class="thecard">
                         <div class="thefront">
-                            <img src="img-com/litmus.png"/>
+                            <img src="img-com/litmus.png" />
                         </div>
-                        <div class="theback"> 
-                            <img src="img-com/litmus.png"/>
+                        <div class="theback">
+                            <img src="img-com/litmus.png" />
                             <div class="content">
                                 <p>Litmus</p>
                             </div>
-                        </div>                </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="maincontainer">
                     <div class="thecard">
                         <div class="thefront">
-                            <img src="img-com/photoshop.png"/>
+                            <img src="img-com/photoshop.png" />
                         </div>
-                        <div class="theback"> 
-                            <img src="img-com/photoshop.png"/>
+                        <div class="theback">
+                            <img src="img-com/photoshop.png" />
                             <div class="content">
                                 <p>Photoshop</p>
                             </div>
-                        </div>                </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="maincontainer">
                     <div class="thecard">
                         <div class="thefront">
-                            <img src="img-com/zurb.png"/>
+                            <img src="img-com/zurb.png" />
                         </div>
-                        <div class="theback"> 
-                            <img src="img-com/zurb.png"/>
+                        <div class="theback">
+                            <img src="img-com/zurb.png" />
                             <div class="content">
                                 <p>Foundation Framework</p>
                             </div>
-                        </div>                </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="maincontainer">
                     <div class="thecard">
                         <div class="thefront">
-                            <img class="salesforce-png" src="img-com/salesforce.png"/>
+                            <img class="salesforce-png" src="img-com/salesforce.png" />
                         </div>
-                        <div class="theback"> 
-                            <img class="salesforce-png" src="img-com/salesforce.png"/>
+                        <div class="theback">
+                            <img class="salesforce-png" src="img-com/salesforce.png" />
                             <div class="content">
                                 <p>Marketing Cloud</p>
                             </div>
-                        </div>                </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="maincontainer">
                     <div class="thecard">
                         <div class="thefront">
-                            <img src="img/mjml.svg"/>
+                            <img src="img/mjml.svg" />
                         </div>
-                        <div class="theback"> 
-                            <img src="img/mjml.svg"/>
+                        <div class="theback">
+                            <img src="img/mjml.svg" />
                             <div class="content">
                                 <p>MJML</p>
                             </div>
-                        </div>                </div>
+                        </div>
+                    </div>
                 </div>
 
             </div>
         </section>
-            
+
+    </div>
+
+    <h1 id="about" class="about-placeholder">About</h1>
+
+
+    <section class="about-me-background">
+        <div class="about-me-ctn">
+            <div class="about-me gif-props" id="about-me1">
+                <div class="gif" data-aos="fade-right" data-aos-duration="1000">
+                    <img src="img-com/profile-img-edited.png" />
+                </div>
+                <div class="about-me-text">
+                    <h1 class="text-down-hidden">About Me</h1>
+                    <p>Greetings! I am a skilled and dedicated <span class="green-txt">Email Developer</span> with a
+                        passion for crafting engaging and visually appealing <span class="green-txt">email
+                            campaigns</span>. My expertise lies in translating designs into <span
+                            class="green-txt">fully functional</span> websites and emails while utilizing my development
+                        skills to <span class="green-txt">enhance</span> and <span class="green-txt">customize</span>
+                        their features.</p>
+                    <div class="personal-details">
+                        <div class="email-location">
+                            <ul class="personal">
+                                <li>
+                                    <h3>Email</h3>
+                                    <p>saimdev2@gmail.com</p>
+                                </li>
+                                <li>
+                                    <h3>Location</h3>
+                                    <p>New York, NY</p>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="education-employment">
+                            <ul class="personal">
+                                <li>
+                                    <h3>Education</h3>
+                                    <p>Computer Information Systems, BS</p>
+                                </li>
+                                <li>
+                                    <h3 class="employment">Employment</h3>
+                                    <p class="employment">Open</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="about-me gif-props" id="about-me2">
+                <div class="why-me-ctn">
+                    <h1 class="gif-h1 text-down-hidden"> What I can do for you...</h1>
+                    <ul class="why-me">
+
+                        <li>
+                            <div class="why-me-text">
+                                <span>Email template creation</span>
+                            </div>
+                            <div class="why-me-text2">
+                                <span>Design and code</span> HTML email templates from scratch or based on provided
+                                wireframes. Ensure the templates are <span>responsive</span> and <span>optimized</span>
+                                for different screen sizes.
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="why-me-text">
+                                <span>Cross-browser compatible</span>
+                            </div>
+                            <div class="why-me-text2">
+                                Write <span>clean and efficient</span> HTML and CSS code. Implement best practices to
+                                ensure email <span> rendering consistency</span> across different email clients. </div>
+                        </li>
+
+                        <li>
+                            <div class="why-me-text">
+                                <span>Email marketing tools</span>
+                            </div>
+                            <div class="why-me-text2">
+                                Create and integrate email templates. Ensure <span>compatibility</span> and
+                                <span>troubleshoot</span> any integration issues.
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="why-me-text">
+                                <span>Identify and resolve</span>
+                            </div>
+                            <div class="why-me-text2">
+                                Perform <span>testing</span> of email templates across different email clients, web
+                                browsers, and devices. <span>Correct</span> and <span>improve</span> rendering issues,
+                                broken links, and inconsistencies in the design.
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="why-me-text">
+                                <span>Trends and best practices</span>
+                            </div>
+                            <div class="why-me-text2">
+                                Stay up-to-date with the latest <span>trends</span>, best <span>practices</span>, and
+                                advancements in email design and development. I <span>strive</span> to improve my
+                                <span>skills</span> and <span> knowledge</span> in HTML email development. </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="left-to-right-hidden second-gif">
+                    <img
+                        src="https://camo.githubusercontent.com/40165a147c3dcea0fa1db780bb533fc5f98546ccfb9d5d05ddb2f429277f5348/68747470733a2f2f616e616c7974696373696e6469616d61672e636f6d2f77702d636f6e74656e742f75706c6f6164732f323031382f31322f646576656c6f7065722d6472696262626c652e676966" />
+                </div>
+            </div>
         </div>
 
-        <section class=" about-me-background">
-            <div class="about-me-ctn">
-                <!-- <div class="gif">
-                    <img src="img-com/giphy.gif" /> 
-                </div>
-    
-                <div class="about-me-text" id="about">
-                    <h1>What I can do for you...</h1>
-                    <p>An HTML Email Developer with a comprehensive understanding of email design. From translating design mockups into HTML email documents, I create original and effective designs that take all project deliverables into account. Personal development is very important to me and I'm constantly improving my skills and knowledge to get the best results from every campaign. My meticulous attention to detail and ability to work within tight deadlines ensures I deliver projects on time, on budget, and on specification.</p>
-                </div> -->
-                <div class="about-me gif-props" id="about-me1">
-                    <div class="gif" data-aos="fade-right" data-aos-duration="1000">
-                        <img src="img-com/profile-img-edited.png" /> 
-                    </div>
-                    <div class="about-me-text" id="about">
-                        <h1 class="text-down-hidden">About Me</h1>
-                        <p>Greetings! I am a skilled and dedicated <span class="green-txt">Email Developer</span> with a passion for crafting engaging and visually appealing <span class="green-txt">email campaigns</span>. My expertise lies in translating designs into <span class="green-txt">fully functional</span> websites and emails while utilizing my development skills to <span class="green-txt">enhance</span> and <span class="green-txt">customize</span> their features.</p>
-                        <div class="personal-details">
-                            <div class="email-location">
-                                <ul class="personal">
-                                    <li>
-                                        <h3>Email</h3>
-                                        <p>saimdev2@gmail.com</p>
-                                    </li>
-                                    <li>
-                                        <h3>Location</h3>
-                                        <p>New York, NY</p>
-                                    </li>
-                                </ul>
-                            </div>
+    </section>
 
-                            <div class="education-employment">
-                                <ul class="personal">
-                                    <li>
-                                        <h3>Education</h3>
-                                        <p>Computer Information Systems, BS</p>
-                                    </li>
-                                    <li>
-                                        <h3>Employment</h3>
-                                        <p>Open</p>
-                                    </li>
-                                </ul>
+    <h1 id="projects" class="projects-placeholder">Projects</h1>
+    <div class="projectCtn">
+
+        <div class="project-title">
+            <h1>HTML Emails</h1>
+        </div>
+
+        <div id="filters" class="hidden button-group filters-button-group">
+            <button class="button is-checked" data-filter="*" ontouchstart>ALL</button>
+            <button class="button" data-filter=".news" ontouchstart>NEWSLETTER</button>
+            <button class="button" data-filter=".trans" ontouchstart="">TRANSACTIONAL</button>
+            <button class="button" data-filter=".promo" ontouchstart="">PROMOTIONAL</button>
+        </div>
+        <div class="hidden grid">
+            <div class="grid-item news" data-category="news">
+
+                <div class="project-box">
+                    <div class="grey-bg">
+                        <div class="project-info">
+                            <div class="project-details" id="project-details1">
+                                HTML Email
                             </div>
+                            <div class="project-title" id="project-title1">
+                                Apple Newsletter Email
+                            </div>
+                            <div class="project-explain">
+                                A clone of an Apple Newsletter email template I created that can be reused to 
+                                populate new article data using JSON. Every section in this email is a partial, 
+                                making it easy to update a section. This was made with Foundation Framework for emails 
+                                and styled with SCSS.    
+                            </div>
+                            <div class="github-link">
+                                <a href="https://github.com/muhammadarif2113/apple-newsletter-email"><ion-icon
+                                        name="logo-github"></ion-icon></a>
+                            </div>
+                            <a href="/Apple Newsletter.html">
+                                <i class="fas fa-long-arrow-alt-right"></i>
+                            </a>
                         </div>
                     </div>
-
                 </div>
-                <div class="about-me gif-props" id="about-me2">
-                    <div class="why-me-ctn">
-                        <h1 class="gif-h1 text-down-hidden"> What I can do for you...</h1>
-                        <ul class="why-me">
 
-                            <li>
-                                <div class="why-me-text">
-                                    <span>Email template creation</span>
-                                </div>
-                                <div class="why-me-text2">
-                                    <span>Design and code</span> HTML email templates from scratch or based on provided wireframes. Ensure the templates are <span>responsive</span> and <span>optimized</span> for different screen sizes.
-                                </div>
-                            </li>
 
-                            <li>
-                                <div class="why-me-text">
-                                    <span>Cross-browser compatible</span>
-                                </div>
-                                <div class="why-me-text2">
-                                    Write <span>clean and efficient</span> HTML and CSS code. Implement best practices to ensure email <span> rendering consistency</span> across different email clients.                                </div>
-                            </li>
-
-                            <li>
-                                <div class="why-me-text">
-                                    <span>Email marketing tools</span>
-                                </div>
-                                <div class="why-me-text2">
-                                     Create and integrate email templates. Ensure <span>compatibility</span> and <span>troubleshoot</span> any integration issues.
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="why-me-text">
-                                    <span>Identify and resolve</span>
-                                </div>
-                                <div class="why-me-text2">
-                                    Perform <span>testing</span> of email templates across different email clients, web browsers, and devices. <span>Correct</span> and <span>improve</span> rendering issues, broken links, and inconsistencies in the design.
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="why-me-text">
-                                    <span>Trends and best practices</span>
-                                </div>
-                                <div class="why-me-text2">
-                                    Stay up-to-date with the latest <span>trends</span>, best <span>practices</span>, and advancements in email design and development. I <span>strive</span> to improve my <span>skills</span> and <span> knowledge</span> in HTML email development.                                </div>
-                            </li>
-
-                            <!-- <li><span>Cross-browser compatible</span>:Write clean and efficient HTML and CSS code. Implement best practices to ensure email rendering consistency across different email clients.</li>
-                            <li> <span>Identify and resolve</span>:Perform testing of email templates across different email clients, web browsers, and devices. Correct and improve rendering issues, broken links, and inconsistencies in the design.</li>
-                            <li><span>Email marketing platforms and tools</span>: (e.g., Mailchimp, Campaign Monitor, SendGrid) to create and integrate email templates. Ensure compatibility and troubleshoot any integration issues.</li>
-                            <li><span>Trends and best practices</span>:Stay up-to-date with the latest trends, best practices, and advancements in email design and development. I strive to improve my skills and knowledge in HTML email development.</li> -->
-                        </ul>
-                        <!-- <div class="left-to-right-hidden gif">
-                            <img src="img-com/giphy.gif" /> 
-                        </div> -->
-                    </div>
-                    <div class="left-to-right-hidden second-gif">
-                        <img src="https://camo.githubusercontent.com/40165a147c3dcea0fa1db780bb533fc5f98546ccfb9d5d05ddb2f429277f5348/68747470733a2f2f616e616c7974696373696e6469616d61672e636f6d2f77702d636f6e74656e742f75706c6f6164732f323031382f31322f646576656c6f7065722d6472696262626c652e676966" /> 
-                    </div>
-                </div>
-                <!-- <div class="about-me" id="about-me3">
-                    <h1 class="text-down-hidden">In my free time you'll find me...</h1>
-                    <div class="personal-gifs">
-                        <img class="right-to-left-hidden gifs" src="img-com/dunking.gif"/>
-                        <img class="right-to-left-hidden gifs" src="img-com/family.gif"/>
-                        <img class="right-to-left-hidden gifs" src="img-com/traveling.gif"/>
-                    </div>
-                </div> -->
             </div>
+            <div class="grid-item trans" data-category="trans" style="margin: 0 10px;">
 
-        </section>
-
-        <!-- <div class="spiral" >
-            <img src="img-com/blue-swil.png" data-aos="rotate-ac"/>
-        </div> -->
-
-
-
-
-
-            <div id="projects" class="projectCtn">
-            
-                <div class="project-title">
-                    <h1>HTML Emails</h1>
+                <div class="project-box1">
+                    <div class="grey-bg">
+                        <div class="project-info">
+                            <div class="project-details" id="project-details2">
+                                HTML Email
+                            </div>
+                            <div class="project-title" id="project-title2">
+                                MyProtein Transactional Email
+                            </div>
+                            <div class="project-explain">
+                                This is a transactional email that captures a purchase made of 
+                                a product. This was created with MJML, a responsive email framework.      
+                            </div>
+                            <div class="github-link">
+                                <a href="https://github.com/muhammadarif2113/transactional-email"><ion-icon
+                                        name="logo-github"></ion-icon></a>
+                            </div>
+                            <a href="https://muhammadarif2113.github.io/transactional-email/">
+                                <i class="fas fa-long-arrow-alt-right"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-            
-                <div id="filters" class="hidden button-group filters-button-group">
-                    <button class="button is-checked" data-filter="*" ontouchstart>ALL</button>
-                    <button class="button" data-filter=".news" ontouchstart>NEWSLETTER</button>
-                    <button class="button" data-filter=".trans" ontouchstart="">TRANSACTIONAL</button>
-                    <button class="button" data-filter=".promo" ontouchstart="">PROMOTIONAL</button>
-                </div>
-                <div class="hidden grid">
-                    <div class="grid-item news" data-category="news">
-            
-                        <div class="project-box">
-                            <div class="grey-bg">
-                                <div class="project-info">
-                                    <div class="project-details" id="project-details1">
-                                        HTML Email - Foundation Framework
-                                    </div>
-                                    <div class="project-title" id="project-title1">
-                                        Apple Newsletter Email
-                                    </div>
-                                    <div class="github-link">
-                                        <a href="https://github.com/muhammadarif2113/apple-newsletter-email"><ion-icon
-                                                name="logo-github"></ion-icon></a>
-                                    </div>
-                                    <a href="/Apple Newsletter.html">
-                                        <i class="fas fa-long-arrow-alt-right"></i>
-                                    </a>
-                                </div>
+            </div>
+            <div class="grid-item promo" data-category="promo">
+                <div class="project-box2">
+                    <div class="grey-bg">
+                        <div class="project-info">
+                            <div class="project-details" id="project-details3">
+                                HTML Email
                             </div>
-                        </div>
-            
-            
-                    </div>
-                    <div class="grid-item trans" data-category="trans" style="margin: 0 10px;">
-            
-                        <div class="project-box1">
-                            <div class="grey-bg">
-                                <div class="project-info">
-                                    <div class="project-details" id="project-details2">
-                                        HTML Email - MJML
-                                    </div>
-                                    <div class="project-title" id="project-title2">
-                                        MyProtein Transactional Email
-                                    </div>
-                                    <div class="github-link">
-                                        <a href="https://github.com/muhammadarif2113/transactional-email"><ion-icon
-                                                name="logo-github"></ion-icon></a>
-                                    </div>
-                                    <a href="https://muhammadarif2113.github.io/transactional-email/">
-                                        <i class="fas fa-long-arrow-alt-right"></i>
-                                    </a>
-                                </div>
+                            <div class="project-title" id="project-title3">
+                                Airline Promotional Email
                             </div>
-                        </div>
-            
-                        <!-- <img class="grid-img" src="img-com/Capture.JPG"> -->
-                        <!-- <div class="item-category">Transactional</div> -->
-                    </div>
-                    <div class="grid-item promo" data-category="promo">
-                        <div class="project-box2">
-                            <div class="grey-bg">
-                                <div class="project-info">
-                                    <div class="project-details" id="project-details3">
-                                        HTML Email - Photoshop/MJML
-                                    </div>
-                                    <div class="project-title" id="project-title3">
-                                        Airline Promotional Email
-                                    </div>
-                                    <div class="github-link">
-                                        <a href="https://github.com/muhammadarif2113/airline-promo-email"><ion-icon
-                                                name="logo-github"></ion-icon></a>
-                                    </div>
-                                    <a href="https://muhammadarif2113.github.io/airline-promo-email/">
-                                        <i class="fas fa-long-arrow-alt-right"></i>
-                                    </a>
-                                </div>
+                            <div class="project-explain">
+                                This is a promotional email that was designed with Photoshop and
+                                created with MJML. It is a colorful and eye-catching email with the
+                                purpose of showcasing discounted domestic flights and enticing subscribers
+                                with popular destination packages.          
                             </div>
-                        </div>
-                        <!-- <img class="grid-img" src="img-com/travel-promo3.png"> -->
-                        <!-- <div class="item-category">Promotion</div> -->
-                    </div>
-            
-                    <div class="grid-item promo" data-category="promo">
-                        <!-- <img class="grid-img" src="img-com/nba-email2.png">
-                                            <div class="item-category">Promotion</div> -->
-            
-                        <div class="project-box3">
-                            <div class="grey-bg">
-                                <div class="project-info">
-                                    <div class="project-details" id="project-details4">
-                                        HTML Email - MJML
-                                    </div>
-                                    <div class="project-title" id="project-title4">
-                                        NBA Store Promotional Email
-                                    </div>
-                                    <div class="github-link">
-                                        <a href="https://github.com/muhammadarif2113/nbastore-promo-email"><ion-icon
-                                                name="logo-github"></ion-icon></a>
-                                    </div>
-                                    <a href="https://muhammadarif2113.github.io/nbastore-promo-email/">
-                                        <i class="fas fa-long-arrow-alt-right"></i>
-                                    </a>
-                                </div>
+                            <div class="github-link">
+                                <a href="https://github.com/muhammadarif2113/airline-promo-email"><ion-icon
+                                        name="logo-github"></ion-icon></a>
                             </div>
-                        </div>
-            
-                    </div>
-            
-                    <div class="grid-item promo" data-category="promo" style="margin: 0 10px;">
-                        <!-- <img class="grid-img" src="img-com/Capture.JPG">
-                                            <div class="item-category">Transactional</div> -->
-            
-                        <div class="project-box4">
-                            <div class="grey-bg">
-                                <div class="project-info">
-                                    <div class="project-details" id="project-details5">
-                                        HTML Email - Foundation Framework
-                                    </div>
-                                    <div class="project-title" id="project-title5">
-                                        Pietra Business Kit Template
-                                    </div>
-                                    <a href="/business-kit-v1.html">
-                                        <i class="fas fa-long-arrow-alt-right"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-            
-                    </div>
-                    <div class="grid-item news" data-category="news">
-            
-                        <div class="project-box5">
-                            <div class="grey-bg">
-                                <div class="project-info">
-                                    <div class="project-details" id="project-details6">
-                                        HTML Email - Foundation Framework
-                                    </div>
-                                    <div class="project-title" id="project-title6">
-                                        Pietra Weekly Newsletter
-                                    </div>
-                                    <a href="/business-kit-news.html">
-                                        <i class="fas fa-long-arrow-alt-right"></i>
-                                    </a>
-                                </div>
-                            </div>
+                            <a href="https://muhammadarif2113.github.io/airline-promo-email/">
+                                <i class="fas fa-long-arrow-alt-right"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
 
-    
+            <div class="grid-item promo" data-category="promo">
+                <div class="project-box3">
+                    <div class="grey-bg">
+                        <div class="project-info">
+                            <div class="project-details" id="project-details4">
+                                HTML Email
+                            </div>
+                            <div class="project-title" id="project-title4">
+                                NBA Store Promotional Email
+                            </div>
+                            <div class="project-explain">
+                                This is a promotional marketing email with promo banners and products.
+                                This was created with MJML, a responsive email framework.       
+                            </div>
+                            <div class="github-link">
+                                <a href="https://github.com/muhammadarif2113/nbastore-promo-email"><ion-icon
+                                        name="logo-github"></ion-icon></a>
+                            </div>
+                            <a href="https://muhammadarif2113.github.io/nbastore-promo-email/">
+                                <i class="fas fa-long-arrow-alt-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
-    
+            </div>
 
-    <!-- <div class="spacer layer2"></div> -->
+            <div class="grid-item promo" data-category="promo" style="margin: 0 10px;">
+                <div class="project-box4">
+                    <div class="grey-bg">
+                        <div class="project-info">
+                            <div class="project-details" id="project-details5">
+                                HTML Email
+                            </div>
+                            <div class="project-title" id="project-title5">
+                                Pietra Business Kit Template
+                            </div>
+                            <div class="project-explain">
+                                These are promotional email templates I created for Pietra 
+                                that aim to advertise their Business Kits and entrepreneurial tools 
+                                to recent subscribers. 
+
+                                <p>The templates were created using Foundation
+                                Framework for emails with the help of partials and JSON data 
+                                which simplified creating multiple templates to target subscribers 
+                                on their purchasing journey. </p>
+                            </div>
+                            <a href="/business-kit-v1.html">
+                                <i class="fas fa-long-arrow-alt-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="grid-item news" data-category="news">
+
+                <div class="project-box5">
+                    <div class="grey-bg">
+                        <div class="project-info">
+                            <div class="project-details" id="project-details6">
+                                HTML Email
+                            </div>
+                            <div class="project-title" id="project-title6">
+                                Pietra <span class="colorful">Weekly</span> Newsletter
+                            </div>
+                            <div class="project-explain">
+                                These are email templates I created for Pietra 
+                                that present subscribers with company events and entrepreneurial tools 
+                                that can help them with their businesses. 
+
+                                <p>The templates were created using Foundation
+                                Framework for emails with the help of partials and JSON data 
+                                which simplified creating multiple templates. </p>
+                            </div>
+                            <a href="/business-kit-news.html">
+                                <i class="fas fa-long-arrow-alt-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <footer>
         <div class="waves">
             <div class="wave" id="wave1"></div>
@@ -567,11 +556,13 @@
         </div>
         <ul class="social-icon">
             <li>
-                <a href="https://www.linkedin.com/in/muhammad-arif-2a9784163/"><ion-icon name="logo-linkedin"></ion-icon></a>
+                <a href="https://www.linkedin.com/in/muhammad-arif-2a9784163/"><ion-icon
+                        name="logo-linkedin"></ion-icon></a>
             </li>
             <li>
-                <a href="https://github.com/muhammadarif2113?tab=repositories"><ion-icon name="logo-github"></ion-icon></a>
-            </li>        
+                <a href="https://github.com/muhammadarif2113?tab=repositories"><ion-icon
+                        name="logo-github"></ion-icon></a>
+            </li>
         </ul>
 
         <ul class="menu">
@@ -583,346 +574,311 @@
         <p>@ 2023 Saim A.</p>
     </footer>
 
+
 <script>
 
-   
 
 
-            AOS.init({
-			    easing: 'ease-out-back',
-			    duration: 1000
-			});
-		
+
+    AOS.init({
+        easing: 'ease-out-back',
+        duration: 1000
+    });
+
 
 const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if(entry.isIntersecting) {
-      entry.target.classList.add('show'); 
-      entry.target.classList.add('left-to-right-show');
-      entry.target.classList.add('right-to-left-show');
-      entry.target.classList.add('text-down-show');
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+            entry.target.classList.add('left-to-right-show');
+            entry.target.classList.add('right-to-left-show');
+            entry.target.classList.add('text-down-show');
 
-    //   entry.target.classList.add('text-down-show');
-    } else {
-      entry.target.classList.remove('show'); 
-      entry.target.classList.remove('left-to-right-show'); 
-      entry.target.classList.remove('right-to-left-show');
-      entry.target.classList.remove('text-down-show'); 
-    //   entry.target.classList.remove('text-down-show');
-    }
-  })
+        } else {
+            entry.target.classList.remove('show');
+            entry.target.classList.remove('left-to-right-show');
+            entry.target.classList.remove('right-to-left-show');
+            entry.target.classList.remove('text-down-show');
+        }
+    })
 })
 
-const hiddenElements = document.querySelectorAll('.hidden'); 
+const hiddenElements = document.querySelectorAll('.hidden');
 // console.log(hiddenElements.length)
-hiddenElements.forEach((el) => observer.observe(el)); 
+hiddenElements.forEach((el) => observer.observe(el));
 
 // console.log(hiddenElements[0]); 
 // console.log(hiddenElements[1]); 
 
 
 
-const hiddenElements2 = document.querySelectorAll('.left-to-right-hidden'); 
+const hiddenElements2 = document.querySelectorAll('.left-to-right-hidden');
 // console.log(hiddenElements.length)
 
-hiddenElements2.forEach((el2) => observer.observe(el2)); 
+hiddenElements2.forEach((el2) => observer.observe(el2));
 
-const hiddenElements4 = document.querySelectorAll('.right-to-left-hidden'); 
+const hiddenElements4 = document.querySelectorAll('.right-to-left-hidden');
 // console.log(hiddenElements.length)
 
-hiddenElements4.forEach((el4) => observer.observe(el4)); 
+hiddenElements4.forEach((el4) => observer.observe(el4));
 
-const hiddenElements3 = document.querySelectorAll('.text-down-hidden'); 
+const hiddenElements3 = document.querySelectorAll('.text-down-hidden');
 // console.log(hiddenElements.length)
 
 // const animateElements = document.querySelectorAll('hidden, left-to-right-hidden, right-to-left-hidden, text-down-hidden'); 
 // console.log(NodeList.keys(animateElements))
 
-hiddenElements3.forEach((el3) => observer.observe(el3)); 
+hiddenElements3.forEach((el3) => observer.observe(el3));
 // for (let i = 0; i < hiddenElements4.length; i++){
 //     observer.observe(hiddenElements[i])
 //     observer.observe(hiddenElements2[i])
 //     observer.observe(hiddenElements3[i])
 //     observer.observe(hiddenElements4[i])
 
-    // animateElements.forEach((ob) => observer.observe(ob)); 
+// animateElements.forEach((ob) => observer.observe(ob)); 
 
 // }
 
 
 // const hiddenElements4 = document.querySelectorAll('.right-to-left-hidden'); 
 // hiddenElements2.forEach((el4) => observer.observe(el4)); 
-        gsap.registerPlugin(ScrollTrigger); 
+gsap.registerPlugin(ScrollTrigger);
 
-        let tl = gsap.timeline()
+let tl = gsap.timeline()
 
-        tl.from('.navigation', 
-        {
-            opacity: 0, 
-            x: 6000, 
-            duration: 1, 
-        })
+tl.from('.navigation', {
+    opacity: 0,
+    x: 6000,
+    duration: 1,
+})
 
-        tl.fromTo('.nav-logo', 
-            {
-                opacity: 0, 
-                x: -1000, 
-            }, 
-            {
-                x: 0,
-                opacity: 1, 
-                x: 0
-            }
-        )
+tl.fromTo('.nav-logo', {
+    opacity: 0,
+    x: -1000,
+}, {
+    x: 0,
+    opacity: 1,
+    x: 0
+})
 
-        tl.fromTo(".name-profile", 
-            {
-                x: 0, 
-                y: 100, 
-                opacity: 0
-            }, 
-            {
-                x: 0, 
-                y: 0, 
-                opacity: 1, 
-                delay: 0.5, 
-                duration: 1.1
-            }
-        )
-        // tl.fromTo(".profile-img",
-        //     {
-        //         height: 0,
-        //     },
-        //     {
-        //         height: 400,
-        //         duration: 1.4,
-        //         ease: "power2.inOut",
-        //     },
-        //     ">-1"
-        // )
-        tl.fromTo(".bio-desc3", 
-            {
-                x: -50, 
-                opacity: 0
-            }, 
-            {
-                x: 0, 
-                opacity: 1, 
-                duration: 0.5
-            }
-        )
-        tl.fromTo(".btn",
-            {
-                x: -50,
-                opacity: 0,
-            },
-            {
-                x: 0,
-                opacity: 1,
-                duration: 0.5
-            },
-        )
+tl.fromTo(".name-profile", {
+    x: 0,
+    y: 100,
+    opacity: 0
+}, {
+    x: 0,
+    y: 0,
+    opacity: 1,
+    delay: 0.5,
+    duration: 1.1
+})
+// tl.fromTo(".profile-img",
+//     {
+//         height: 0,
+//     },
+//     {
+//         height: 400,
+//         duration: 1.4,
+//         ease: "power2.inOut",
+//     },
+//     ">-1"
+// )
+tl.fromTo(".bio-desc3", {
+    x: -50,
+    opacity: 0
+}, {
+    x: 0,
+    opacity: 1,
+    duration: 0.5
+})
+tl.fromTo(".btn", {
+    x: -50,
+    opacity: 0,
+}, {
+    x: 0,
+    opacity: 1,
+    duration: 0.5
+}, )
 
-        var aboutMeHeight = document.querySelector('.about-me')
-        // console.log(aboutMeHeight.clientHeight); 
+var aboutMeHeight = document.querySelector('.about-me')
+// console.log(aboutMeHeight.clientHeight); 
 
-        var aboutHeight = aboutMeHeight.clientHeight * -1; 
-        // console.log(aboutHeight); 
+var aboutHeight = aboutMeHeight.clientHeight * -1;
+// console.log(aboutHeight); 
+
+//*
+// gsap.to(".about-me", { 
+//     y: aboutHeight + -30,
+//     duration: 1.2,
+//     ease: "Bounce.easeIn",
+//     scrollTrigger: {
+//         trigger: ".about-me",
+//         start: "center center",
+//         end: "center center",
+//         toggleActions: "play none reverse reverse",
+//     }
+// })
 
 
-        gsap.to(".about-me", {
-            y: aboutHeight + -30,
-            duration: 1.2,
-            ease: "Bounce.easeIn",
-            scrollTrigger: {
-                trigger: ".about-me",
-                start: "center center",
-                end: "center center",
-                toggleActions: "play none reverse reverse",
-                // toggleActions: "play none none reverse",
-                        //      onEnter onLeave onEnterBack onLeaveBack
-                // markers: true 
-            } 
-        })
-        
+// gsap.to(".about-me", {
+//     y: -850,
+//     // ease: "Bounce.easeIn",
+//     scrollTrigger: {
+//         trigger: ".about-me",
+//         start: "top 10%", 
+//         // toggleActions: "play none none reverse",
+//         toggleActions: "play none reverse reverse",
+//                 //      onEnter onLeave onEnterBack onLeaveBack
+//         // markers: true 
 
-        // gsap.to(".about-me", {
-        //     y: -850,
-        //     // ease: "Bounce.easeIn",
-        //     scrollTrigger: {
-        //         trigger: ".about-me",
-        //         start: "top 10%", 
-        //         // toggleActions: "play none none reverse",
-        //         toggleActions: "play none reverse reverse",
-        //                 //      onEnter onLeave onEnterBack onLeaveBack
-        //         // markers: true 
+//     } 
+// })
 
-        //     } 
-        // })
-
-        // gsap.fromTo(".about-me",
-        // {
-        //     y: 0,
-        //     duration: 2,
-        //     // ease: "Bounce.easeIn",
-        //     scrollTrigger: {
-        //         trigger: ".about-me",
-        //         start: "center center",
-        //         markers: true
-        //     }
-        // }, 
-        // {
-        //     y: -500,
-        //     duration: 2,
-        //     // ease: "Bounce.easeIn",
-        //     scrollTrigger: {
-        //         trigger: ".about-me",
-        //         start: "top top"
-        //     } 
-        // })
+// gsap.fromTo(".about-me",
+// {
+//     y: 0,
+//     duration: 2,
+//     // ease: "Bounce.easeIn",
+//     scrollTrigger: {
+//         trigger: ".about-me",
+//         start: "center center",
+//         markers: true
+//     }
+// }, 
+// {
+//     y: -500,
+//     duration: 2,
+//     // ease: "Bounce.easeIn",
+//     scrollTrigger: {
+//         trigger: ".about-me",
+//         start: "top top"
+//     } 
+// })
 
 
 
+let about = document.querySelector('.about-placeholder');
 
-        let about = document.querySelector('.about-me-background'); 
-        let skills = document.querySelector('.maincontainer-ctn'); 
-        let projects = document.querySelector('.grid'); 
-        let home = document.querySelector('.topWaves'); 
+// let about = document.querySelector('.about-me-background');
+// let skills = document.querySelector('.maincontainer-ctn');
+let skills = document.querySelector('.skills-placeholder');
 
-        let nav = document.querySelector('.navigation')
+// let projects = document.querySelector('.grid');
+let projects = document.querySelector('.projects-placeholder'); 
+let home = document.querySelector('.topWaves');
 
-        const li = document.querySelectorAll('.list a'); 
-        const sec = document.querySelectorAll('section'); 
-        // console.log(sec)
+let nav = document.querySelector('.navigation')
 
-
-
-        //get section scroll length 
-        //when scrolling, see if the current window scroll length matches the section scroll length
+const li = document.querySelectorAll('.list a');
+const sec = document.querySelectorAll('section');
 
 
-        // console.log(scrollY)
-        // console.log(skills.offsetTop) //548 //516 scroll
-                                    // 877 // 876.5 about
+window.addEventListener('scroll', () => {
 
-        window.addEventListener('scroll', ()=> {
+    let aboutSec = about.offsetTop - skills.offsetTop;
+    let endofAbout = about.offsetTop + aboutSec;
 
-            let aboutSec = about.offsetTop- skills.offsetTop; 
-            let endofAbout = about.offsetTop + aboutSec; 
+    let skillsSec = skills.offsetTop - about.offsetTop
+    // let endofSkills = skills.offsetTop + skillsSec; 
+    // let endofSkills = about.offsetTop
 
-            let skillsSec = skills.offsetTop - about.offsetTop
-            // let endofSkills = skills.offsetTop + skillsSec; 
-            // let endofSkills = about.offsetTop
+    // console.log('this is current ' + window.scrollY)
+    // console.log('this is starting of skills ' + skills.offsetTop)
+    // // console.log('this is end of skills ' + endofSkills)
+    // console.log('this is start of about ' + about.offsetTop)
 
-            // console.log('this is current ' + window.scrollY)
-            // console.log('this is starting of skills ' + skills.offsetTop)
-            // // console.log('this is end of skills ' + endofSkills)
-            // console.log('this is start of about ' + about.offsetTop)
+    const list2 = document.querySelectorAll('.list');
 
-            const list2 = document.querySelectorAll('.list'); 
-
-            if (window.scrollY >= home.offsetTop && window.scrollY  <= skills.offsetTop) { //this will happen in the home section
-                list2.forEach((item, i) => { //loop through all the nav links 
-                    item.classList.remove('active') //remove active on current
-                }); 
-                let homeLink = document.querySelector('#home-li')
-                homeLink.classList.add('active'); 
-                
-                // nav.style.background = 'purple'
-            } 
-
-            if (window.scrollY >= (about.offsetTop-150) && window.scrollY  <= endofAbout) { //this will happen in the about section
-                list2.forEach((item, i) => { //loop through all the nav links 
-                    item.classList.remove('active') //remove active on current
-                }); 
-                let aboutLink = document.querySelector('#about-li')
-                aboutLink.classList.add('active'); 
-                // nav.style.background = 'purple'
-            } 
-            let secSkills = skills.offsetTop - 100; 
-            if (window.scrollY >= secSkills && window.scrollY  <= about.offsetTop) { //this will happen in the skills section
-                list2.forEach((item, i) => { //loop through all the nav links 
-                    item.classList.remove('active') //remove active on current
-                }); 
-                let skillsLink = document.querySelector('#skills-li')
-                skillsLink.classList.add('active'); 
-                // nav.style.background = 'green' 
-            }
-            let projectsSec = projects.offsetTop - 100; 
-            if (window.scrollY >= projectsSec) { //this will happen in the projects section
-                // console.log('in projects section')
-                list2.forEach((item, i) => { //loop through all the nav links 
-                    item.classList.remove('active') //remove active on current
-                }); 
-                let projectsLink = document.querySelector('#projects-li')
-                projectsLink.classList.add('active'); 
-            }
-        })
-
-        // function activeMenu(){
-        //     let len = sec.length; 
-        //     while(--len && window.scrollY + 97 < sec[len].offsetTop){}
-        //     li.forEach(ltx=> ltx.classList.remove('active')); 
-        //     li[len].classList.add('activee'); 
-        // }
-        // activeMenu(); 
-        // window.addEventListener('scroll', activeMenu); 
-
-
-
-        const list = document.querySelectorAll('.list'); 
-
-
-        function activeLink(){
-            list.forEach((item) => 
-            item.classList.remove('active')
-            ); 
-            this.classList.add('active')
-        }
-        list.forEach((item) => {
-            item.addEventListener('click', activeLink)
+    if (window.scrollY >= home.offsetTop && window.scrollY <= skills.offsetTop) { //this will happen in the home section
+        list2.forEach((item, i) => { //loop through all the nav links 
+            item.classList.remove('active') //remove active on current
         });
+        let homeLink = document.querySelector('#home-li')
+        homeLink.classList.add('active');
 
-        const header = document.querySelector('.navigation')
-        const indicator = document.querySelector('.indicator')
-        const indicatorBefore = document.querySelector('.indicator::before')
-        const indicatorAfter = document.querySelector('.indicator::after')
-
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50 ){
-
-                header.classList.add('navigationTrans') //makes navbar transparent
-                indicator.classList.add('indicatorTrans') //makes indicator transparent
-                // indicatorBefore.classList.add('.indicatorTrans::before') //makes indicator transparent
-                // indicatorAfter.classList.add('.indicatorTrans::after') //makes indicator transparent
-                // console.log('hello')
-            } else if (window.scrollY <= 50){
-                header.classList.remove('navigationTrans')
-                indicator.classList.remove('indicatorTrans')
-                // indicatorBefore.classList.remove('.indicatorTrans::before')
-                // indicatorAfter.classList.remove('.indicatorTrans::after')
-            }
-        })
-
-        // const activePage = window.location.href; 
-        // console.log(activePage);
-
-        // const button = document.querySelector('.profile-but'); 
-        // button.addEventListener('click', function(e){
-        //     let x = e.clientX - e.target.offsetLeft; 
-        //     let y = e.clientY - e.target.offsetTop; 
-
-        //     let ripples = document.createElement('span-but'); 
-        //     ripples.style.left = x + 'px'; 
-        //     ripples.style.top = y + 'px'; 
-        //     this.appendChild(ripples)
-        // })
-
-        // setTimeOut(() => {
-        //     ripples.remove()
-        // }, 1000); 
-    </script>
-
+        // nav.style.background = 'purple'
+    }
+    // let secAbout = about.offsetTop - 100;
+    // if (window.scrollY >= (about.offsetTop) && window.scrollY <= endofAbout) { //this will happen in the about section
+    //     list2.forEach((item, i) => { //loop through all the nav links 
+    //         item.classList.remove('active') //remove active on current
+    //     });
+    //     let aboutLink = document.querySelector('#about-li')
+    //     aboutLink.classList.add('active');
+    //     nav.style.background = 'purple'
+    // }
     
+    let secSkills = skills.offsetTop - 100;
+    if (window.scrollY >= secSkills && window.scrollY <= about.offsetTop) { //this will happen in the skills section
+        list2.forEach((item, i) => { //loop through all the nav links 
+            item.classList.remove('active') //remove active on current
+        });
+        let skillsLink = document.querySelector('#skills-li')
+        skillsLink.classList.add('active');
+        // nav.style.background = 'green' 
+    }
+
+    let secAbout = about.offsetTop - 100;
+    if (window.scrollY >= (about.offsetTop-100) && window.scrollY <= endofAbout) { //this will happen in the about section
+        list2.forEach((item, i) => { //loop through all the nav links 
+            item.classList.remove('active') //remove active on current
+        });
+        let aboutLink = document.querySelector('#about-li')
+        aboutLink.classList.add('active');
+        // nav.style.background = 'purple'
+    }
+
+
+
+
+
+    let projectsSec = projects.offsetTop - 100;
+    if (window.scrollY >= projectsSec) { //this will happen in the projects section
+        // console.log('in projects section')
+        list2.forEach((item, i) => { //loop through all the nav links 
+            item.classList.remove('active') //remove active on current
+        });
+        let projectsLink = document.querySelector('#projects-li')
+        projectsLink.classList.add('active');
+    }
+})
+
+const list = document.querySelectorAll('.list');
+
+
+function activeLink() {
+    list.forEach((item) =>
+        item.classList.remove('active')
+    );
+    this.classList.add('active')
+}
+list.forEach((item) => {
+    item.addEventListener('click', activeLink)
+});
+
+const header = document.querySelector('.navigation')
+const indicator = document.querySelector('.indicator')
+const indicatorBefore = document.querySelector('.indicator::before')
+const indicatorAfter = document.querySelector('.indicator::after')
+
+window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+
+            header.classList.add('navigationTrans') //makes navbar transparent
+            indicator.classList.add('indicatorTrans') //makes indicator transparent
+            // indicatorBefore.classList.add('.indicatorTrans::before') //makes indicator transparent
+            // indicatorAfter.classList.add('.indicatorTrans::after') //makes indicator transparent
+            // console.log('hello')
+        } else if (window.scrollY <= 50) {
+            header.classList.remove('navigationTrans')
+            indicator.classList.remove('indicatorTrans')
+            // indicatorBefore.classList.remove('.indicatorTrans::before')
+            // indicatorAfter.classList.remove('.indicatorTrans::after')
+        }
+    }) 
+    
+</script>
 </body>
 </html>
+
+
