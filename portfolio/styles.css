@@ -1685,7 +1685,10 @@ span-but{
         overflow-y: hidden;
     }
     .skills-header{
-        margin-top: 200px;
+        margin-top: 600px;
+    }
+    .bubble::after{
+        display: none;
     }
 
     .watercolor-ctn{
