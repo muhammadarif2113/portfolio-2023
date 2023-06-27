@@ -719,7 +719,7 @@ body{
     padding: 5px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     font-family: 'Work Sans', sans-serif;
-
+    color: #000000; 
 }
 
 .profile-but{
@@ -1685,7 +1685,7 @@ span-but{
         overflow-y: hidden;
     }
     .skills-header{
-        margin-top: 200px;
+        margin-top: 600px;
     }
 
     .watercolor-ctn{
@@ -1743,7 +1743,7 @@ span-but{
         width: 90%;
         /* margin: 35px !important; */
         margin: 50px auto !important;
-        padding: 20px;
+        /* padding: 20px; */
         position:  relative !important;
         top: 0 !important;
     } 
@@ -1781,7 +1781,7 @@ span-but{
 
     .nav-logo img{
         /* animation: float-hr 1.5s ease-out infinite; */
-        width: 150px;
+        width: 200px;
     }
 
 
