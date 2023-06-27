@@ -1074,11 +1074,11 @@ span-but{
 
 /* ---- .element-item ---- */
 .grid-item {
-  width: 32.7%;
+  width: 32%;
   min-width: 200px;
   height: 550px;
-  padding: 10px;
-  margin-bottom: 10px;
+  padding: 6px;
+  margin: 0 5px 10px 5px;
 }
 
 .news{
@@ -1780,7 +1780,8 @@ span-but{
     }
 
     .nav-logo img{
-        animation: float-hr 1.5s ease-out infinite;
+        /* animation: float-hr 1.5s ease-out infinite; */
+        width: 150px;
     }
 
 
