@@ -650,55 +650,17 @@
 
         var aboutHeight = aboutMeHeight.clientHeight * -1;
 
-        //*
-        // gsap.to(".about-me", { 
-        //     y: aboutHeight + -30,
-        //     duration: 1.2,
-        //     ease: "Bounce.easeIn",
-        //     scrollTrigger: {
-        //         trigger: ".about-me",
-        //         start: "center center",
-        //         end: "center center",
-        //         toggleActions: "play none reverse reverse",
-        //     }
-        // })
-
-
-        // gsap.to(".about-me", {
-        //     y: -850,
-        //     // ease: "Bounce.easeIn",
-        //     scrollTrigger: {
-        //         trigger: ".about-me",
-        //         start: "top 10%", 
-        //         // toggleActions: "play none none reverse",
-        //         toggleActions: "play none reverse reverse",
-        //                 //      onEnter onLeave onEnterBack onLeaveBack
-        //         // markers: true 
-
-        //     } 
-        // })
-
-        // gsap.fromTo(".about-me",
-        // {
-        //     y: 0,
-        //     duration: 2,
-        //     // ease: "Bounce.easeIn",
-        //     scrollTrigger: {
-        //         trigger: ".about-me",
-        //         start: "center center",
-        //         markers: true
-        //     }
-        // }, 
-        // {
-        //     y: -500,
-        //     duration: 2,
-        //     // ease: "Bounce.easeIn",
-        //     scrollTrigger: {
-        //         trigger: ".about-me",
-        //         start: "top top"
-        //     } 
-        // })
-
+        gsap.to(".about-me", { 
+            y: aboutHeight,
+            duration: 1.2,
+            ease: "Bounce.easeIn",
+            scrollTrigger: {
+                trigger: ".about-me",
+                start: "center center",
+                end: "center center",
+                toggleActions: "play none reverse reverse",
+            }
+        })
 
 
         let about = document.querySelector('.about-placeholder');
