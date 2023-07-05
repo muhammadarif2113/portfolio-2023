@@ -568,7 +568,7 @@
     </div>
     <section class="spikes">
         <div class="form-ctn">
-            <h3 class="contact-title">Contact</h3>
+            <h3 class="contact-title">CONTACT</h3>
             <form>
                 <div class="row">
                     <div class="w-50">
@@ -584,16 +584,25 @@
                     </div>
 
                     <div class="w-100 item_center">
-                       <button class="contact-button" type="submit">Send Message</button>
+                       <button class="contact-button">Send Message</button>
+                        <img class="mail-sent" src="img-com/letter (1).png" />
+                        <div class="sent-text">Sent</div>
                     </div>
                 </div>
             </form>
+        </div>
+        <div class="letter-img2">
+            <img src="img/pngegg (1).png" />
         </div>
     </section>
 
     <div class="mail-img">
         <img src="img-com/mail (1).png" />
     </div>
+
+    <!-- <div class="letter-img2">
+        <img src="img/pngegg (1).png" />
+    </div> -->
 
     <footer>
         <div class="waves">
@@ -790,6 +799,33 @@
                 // indicatorAfter.classList.remove('.indicatorTrans::after')
             }
         })
+
+        let mail = document.querySelector('.letter-img2'); 
+        let sendMailButton = document.querySelector('.contact-button'); 
+        let mailSent = document.querySelector('.mail-sent');
+        let mailSentText = document.querySelector('.sent-text');  
+
+
+        sendMailButton.addEventListener('click', function(e){
+            e.preventDefault(); 
+            
+            tl.fromTo(mail, {
+                x: 0,
+                y: 0,
+                opacity: 1
+            }, {
+                x: -600,
+                y: -450,
+                opacity: 0,
+                duration: 0.8
+            })
+
+            sendMailButton.innerHTML = 'Sent <ion-icon name="checkmark-circle-outline" style="color: #58DC37;"></ion-icon>'; 
+            sendMailButton.style.fontSize = "1.3rem"; 
+
+            
+        }); 
+        
 
     </script>
 </body>

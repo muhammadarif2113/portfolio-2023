@@ -1369,7 +1369,7 @@ span-but{
 
   .spikes{
     position: relative;
-    margin: 100px 0;
+    margin: 400px 0 200px 0;
     color: black;
     display: flex;
     justify-content: center;
@@ -1427,6 +1427,12 @@ span-but{
     margin: 0 10px;
   }
 
+  .name, .email, .message{
+    border-bottom: none;
+    font-family: 'Jost', sans-serif;
+
+  }
+
   .mail-img{
     position: relative;
     pointer-events: none; 
@@ -1435,25 +1441,59 @@ span-but{
 
   .mail-img img{
     position: absolute;
-    transform: rotate(-15deg);
-    top: -670px;
+    transform: rotate(-10deg);
+    top: -815px;
     width: 100%;
   }
 
-  /* .mail-img{
+  .letter-img{
     position: relative;
+    width: 350px;
     pointer-events: none; 
-    width: 100px;
-    top: -600px;
-    left: 300px;
-    border: 1px solid black;
   }
 
-  .mail-img img{
+  .letter-img img{
     position: absolute;
-    transform: rotate(-15deg);
+    left: 620px;
+    top: -340px;
     width: 100%;
-  } */
+    transform: rotate(10deg);
+    opacity: 0.8;
+  }
+
+  .letter-img2{
+    position: absolute;
+    width: 250px;
+    pointer-events: none; 
+    top: 300px; 
+    transform: rotate(-55deg);
+    opacity: 0.6;
+    margin-left: 400px;
+  }
+
+  .letter-img2 img{
+    width: 100%;
+    
+  }
+
+  .mail-sent{
+    width: 150px;
+    height: 100px;
+    transform: rotate(26deg);
+    position: absolute;
+    visibility: hidden;
+    opacity: 0.5;
+  }
+
+  .sent-text{
+    position: absolute;
+    font-size: 22px;
+    font-weight: 700;
+    visibility: hidden;
+    opacity: 1;
+    color: #046a00;
+
+  }
 
   .form-ctn::after{
     content: "";
@@ -1466,12 +1506,10 @@ span-but{
     border-radius: 50%;
   }
 
-  .form-ctn:hover{
-    box-shadow: 0 0 5px #000000, 0 0 5px #000000;
-  }
-
   .contact-title{
-    font-size: 1.8rem;
+    font-family: 'Work Sans', serif;
+    letter-spacing: 3px;
+    font-size: 2rem;
     margin: 10px 0;
     font-weight: 500;
     color: black;
@@ -1509,7 +1547,6 @@ span-but{
 
   input::placeholder, 
   textarea::placeholder{
-    /* color: rgba(255, 255, 255, 0.3); */
     color: #333333;
   }
 
@@ -1530,7 +1567,7 @@ span-but{
   }
 
   .contact-button{
-    width: 150px;
+    width: 180px;
     background-color: transparent;
     color: #000000;
     outline: none;
@@ -1538,11 +1575,18 @@ span-but{
     border-radius: 25px;
     margin: 5px 0;
     padding: 15px 20px;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    transition: 0.5s ease all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-family: 'Jost', sans-serif;
+    cursor: pointer;
   }
   .contact-button:hover{
     background-color: #000000;
-    width: 180px;
+    width: 170px;
     color: #FFFFFF;
     font-weight: 600;
   }
@@ -1717,6 +1761,14 @@ span-but{
     }
 }
 
+@media screen and (max-width: 1362px){
+    .mail-img img{
+        width: 500px;
+        top: -640px;
+        left: 150px;
+    }
+}
+
 @media screen and (max-width: 1040px) {
     .bubble-content{
         width: 100%;
@@ -1763,7 +1815,6 @@ span-but{
     }
     .grid{
         padding-left: 15px;
-        border: 1px solid black;
     }
     .grid-item {
         width: 46%;
@@ -1828,6 +1879,12 @@ span-but{
         margin-right: 2%;
     }
 
+  }
+
+  @media screen and (min-width: 767px ) {
+    .form-ctn:hover{
+        box-shadow: 0 0 5px #000000, 0 0 5px #000000;
+    }
   }
 
   @media screen and (max-width: 767px) {
@@ -2045,13 +2102,17 @@ span-but{
         width: 100%;
     }
 
+    .form-ctn{
+        box-shadow: none;
+    }
+
     .form-ctn::after{
         top: -9.5rem;
         right: -9.5rem;
     }
 
-    .mail-img{
-        width: 90%;
+    .mail-img, .letter-img2{
+        display: none;
     }
 
     footer{
@@ -2116,8 +2177,5 @@ span-but{
 
     .grid-item{
         padding: 10px !important;
-    }
-    .mail-img{
-        width: 80%;
     }
   }
