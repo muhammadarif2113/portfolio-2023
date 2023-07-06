@@ -1369,7 +1369,7 @@ span-but{
 
   .spikes{
     position: relative;
-    margin: 400px 0 200px 0;
+    margin: 400px 0 450px 0;
     color: black;
     display: flex;
     justify-content: center;
@@ -1442,7 +1442,7 @@ span-but{
   .mail-img img{
     position: absolute;
     transform: rotate(-10deg);
-    top: -815px;
+    top: -1070px;
     width: 100%;
   }
 
@@ -1505,6 +1505,10 @@ span-but{
     right: -8rem;
     border-radius: 50%;
   }
+
+  .form-ctn:hover{
+    box-shadow: 0 0 5px #000000, 0 0 5px #000000;
+}
 
   .contact-title{
     font-family: 'Work Sans', serif;
@@ -1764,7 +1768,7 @@ span-but{
 @media screen and (max-width: 1362px){
     .mail-img img{
         width: 500px;
-        top: -640px;
+        /* top: -640px; */
         left: 150px;
     }
 }
@@ -1879,12 +1883,6 @@ span-but{
         margin-right: 2%;
     }
 
-  }
-
-  @media screen and (min-width: 767px ) {
-    .form-ctn:hover{
-        box-shadow: 0 0 5px #000000, 0 0 5px #000000;
-    }
   }
 
   @media screen and (max-width: 767px) {
@@ -2102,8 +2100,9 @@ span-but{
         width: 100%;
     }
 
-    .form-ctn{
-        box-shadow: none;
+    .spikes{
+        margin-top: 0;
+        height: 800px;
     }
 
     .form-ctn::after{
