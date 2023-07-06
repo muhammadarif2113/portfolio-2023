@@ -43,7 +43,8 @@
     <script src="isotope.pkgd.min.js"></script>
     <script src="isotope-jquery.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"> </script>
-    <title>Saim A. Portfolio</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"> </script>
+    <title>Saim A. Developer</title>
 </head>
 
 <body>
@@ -584,7 +585,7 @@
                     </div>
 
                     <div class="w-100 item_center">
-                       <button class="contact-button">Send Message</button>
+                       <button class="contact-button" onclick="handleSubmit()">Send Message</button>
                         <img class="mail-sent" src="img-com/letter (1).png" />
                         <div class="sent-text">Sent</div>
                     </div>
@@ -816,11 +817,40 @@
                 duration: 0.8
             })
 
-            sendMailButton.innerHTML = 'Sent <ion-icon name="checkmark-circle-outline" style="color: #58DC37;"></ion-icon>'; 
-            sendMailButton.style.fontSize = "1.3rem"; 
-
-            
+            // sendMailButton.innerHTML = 'Sent <ion-icon name="checkmark-circle-outline" style="color: #58DC37;"></ion-icon>'; 
+            // sendMailButton.style.fontSize = "1.3rem"; 
         }); 
+
+        (function(){
+            emailjs.init("YGbIsSdkUTtfJ1RGG");
+        })();
+
+        const serviceId="service_cqs6enb"; 
+        const templateId="template_stdyc6m"; 
+        const handleSubmit= () => {
+            const userName = document.querySelector('.name').value
+            const email = document.querySelector('.email').value
+            const message = document.querySelector('.message').value
+
+            var params = {
+                name: userName, 
+                email: email, 
+                message: message, 
+            }; 
+            emailjs
+                .send(serviceId, templateId, params)
+                .then((res) => {
+                    document.querySelector(".name").value = "";
+                    document.querySelector(".email").value = "";
+                    document.querySelector(".message").value = "";
+
+                    sendMailButton.innerHTML = 'Sent <ion-icon name="checkmark-circle-outline" style="color: #58DC37;"></ion-icon>'; 
+                    sendMailButton.style.fontSize = "1.2rem"; 
+            })
+            .catch((err)=> {
+                console.log("An error has occured");
+            });
+        };
         
 
     </script>
