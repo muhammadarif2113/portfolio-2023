@@ -478,6 +478,7 @@ body{
     font-family: 'Jost', sans-serif;
     font-weight: 400;
     font-size: 25px;
+    margin-top: 0;
 }
 
 .about-me-background{
@@ -538,7 +539,7 @@ body{
   
 
 .gif-props{
-    text-align: center; 
+    text-align: left; 
     display: flex;
 }
 
@@ -623,7 +624,7 @@ body{
 
 .personal-details .personal li h3{
     margin-bottom: 4px;
-    color: #670000;
+    color: #9c243a;
 }
 
 .personal-details .personal li p, .personal li h3{
@@ -633,8 +634,8 @@ body{
 
 .why-me-ctn{
     text-align: left;
-    width: 70%;
-    margin-right: 3%;
+    width: 50%;
+    /* margin-right: 3%; */
     z-index: 10;
     display: flex;
     flex-direction: column;
@@ -645,7 +646,7 @@ body{
 .gif-h1{
     text-align: center;
     margin: 0;
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     font-family: 'Work Sans', serif;
 
 }
@@ -666,12 +667,12 @@ body{
 .why-me-text{
     padding-right: 10px;
     width: 25%;
-    text-align: right;
+    text-align: left;
     font-family: 'DM Sans', sans-serif;
 }
 
 .why-me-text span{
-    color: #670000;
+    color: #6c1928;
 }
 
 .why-me-text2{
@@ -693,7 +694,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 350px;
+    width: 50%; 
 }
 
 .second-gif img{
@@ -765,7 +766,7 @@ span-but{
     padding: 20px 30px;
     font-size: 24px;
     border-radius: 59px;
-    border: 2px solid #f1564e     ;
+    border: 2px solid #f1564e;
     color: #f1564e;
     background-color: transparent;
     text-transform: uppercase;
@@ -789,7 +790,21 @@ span-but{
     width: 88px;
     height: 120px;
     transition: transform 0.3s  ease;
+}
 
+.contactBtn{
+    font-family: 'Poppins';
+    text-decoration: none;
+    color: #244a8d;
+    letter-spacing: 3px;
+    font-size: 1.5em;
+    margin-left: 20px;
+    font-weight: 700;
+    transition: all 1s;
+}
+
+.contactBtn:hover{
+    color: #000000;
 }
 
 .btn-label{
@@ -895,7 +910,7 @@ span-but{
 .watercolor-ctn img{
     width: 500px;
     position: absolute;
-    left: -200px;
+    left: -100px;
     top: -200px;
     opacity: 0.8;
 
@@ -909,7 +924,8 @@ span-but{
 .red-paint-bg img{
     position: absolute;
     width: 400px;
-    right: 0;
+    right: 100px;
+    top: 100px;
     opacity: 0.9;
 }
 
@@ -954,7 +970,7 @@ span-but{
     text-align: center;
 }
 .skills img{
-    width: 45%;
+    width: 35%;
 }
 
 .maincontainer-ctn{
@@ -1014,6 +1030,7 @@ span-but{
     width: 45%;
     text-align: center;
     z-index: 1;
+    min-width: 127px; 
 
 }
 
@@ -1039,7 +1056,7 @@ span-but{
     width: 45%;
     text-align: center;
     z-index: 1;
-
+    min-width: 127px; 
 }
 
 .salesforce-png{
@@ -1378,12 +1395,16 @@ span-but{
     --spike-color: #FFFFFF;
     --spike-width: 50px;
     --spike-height: 10px;
-    background: #ececec; 
-        /* linear-gradient(
-            to right, 
-            #4291c9, 
-            #a9ecf1
-        ); */
+    /* background: #ececec;  */
+    /* background: #ffcfcf; */
+    /* background: radial-gradient(circle, rgba(255,207,207,1) 0%, rgba(249,216,215,1) 50%, rgba(255,126,152,1) 100%); */
+    /* background: radial-gradient(circle, rgba(236,236,236,1) 0%, rgba(195,184,184,1) 50%, rgba(168,167,167,1) 100%); */
+    /* background: radial-gradient(circle, rgba(236,236,236,1) 0%, rgba(235,219,219,1) 50%, rgba(208,147,147,1) 100%); */
+    /* background: radial-gradient(circle, rgba(236,236,236,1) 0%, rgba(210,190,190,1) 50%, rgba(171,171,171,1) 100%); */
+    background: radial-gradient(circle, rgba(236,236,236,1) 0%, rgba(255,241,241,1) 50%, rgba(171,171,171,1) 100%);
+
+
+
 
   }
 
@@ -1425,6 +1446,8 @@ span-but{
     position: relative;
     overflow: hidden;
     margin: 0 10px;
+    /* background: #ffcfcf; */
+    background: #ececec;
   }
 
   .name, .email, .message{
@@ -1502,6 +1525,7 @@ span-but{
     position: absolute;
     height: 15rem;
     width: 15rem;
+    /* background-color: #f1564e; */
     background-color: #000000;
     top: -8rem;
     right: -8rem;
@@ -1887,6 +1911,12 @@ span-but{
 
   }
 
+  @media screen and (min-width: 767px) {
+    .coding-gif, .hands{
+        display: none;
+    }
+  }
+
   @media screen and (max-width: 767px) {
     .profile-text{
         margin: 0;
@@ -1922,9 +1952,11 @@ span-but{
     .name-profile-ctn img{
         width: 30%;
     }
-    .red-paint-bg img{
-        margin-right: 60px;
+    .contactBtn{
+        display: block;
+        margin-top: 20px;
     }
+
     .content-area{
         width: 100%;
         overflow-x: hidden;
@@ -1941,13 +1973,9 @@ span-but{
         margin-left: 200px;
     }
 
-    .red-paint-bg img{
-        margin-top: 100px;
-    }
-
     .maincontainer-ctn{
         padding: 0 20px;
-        height: 750px;
+        height: 1400px;
     }
 
     .gif{
@@ -1956,6 +1984,24 @@ span-but{
 
     .gif img{
         width: 100%;
+    }
+
+    .coding-gif, .hands{
+        display: block;
+    }
+
+    .coding-gif{
+        margin-bottom: 50px !important;
+    }
+
+
+
+    .about-me-title{
+        margin-top: 50px !important;
+    }
+
+    .email-location, .education-employment{
+        text-align: center;
     }
 
     .personal span{
@@ -1974,7 +2020,12 @@ span-but{
 
     .about-me-ctn{
         width: 100%;
-        height: 500px;
+        /* height: 500px; */
+        height: 2000px;
+    }
+
+    .vl{
+        display: none;
     }
 
     .about-me{
@@ -2041,6 +2092,7 @@ span-but{
 
     .watercolor-ctn img{
         opacity: 0.7;
+        margin-top: 400px;
     }
 
     .red-paint-bg{
@@ -2050,6 +2102,8 @@ span-but{
 
     .red-paint-bg img{
         opacity: 0.7;
+        /* margin-right: 60px;
+        margin-top: 100px; */
     }
 
     .navigationTrans{
@@ -2073,6 +2127,16 @@ span-but{
         display: none;
     }
 
+    .gif-props{
+        flex-direction: column;
+    }
+
+    .second-gif{
+        width: 100%;
+        z-index: 10;
+        text-align: center;
+    }
+
     .about-me-text{
         width: 100%;
         padding: 10px;
@@ -2083,6 +2147,7 @@ span-but{
         width: 100%;
         padding: 10px 0;
         margin: 0;
+        text-align: center;
     }
 
     .why-me-text{
@@ -2094,9 +2159,9 @@ span-but{
         padding: 5px;
     }
 
-    .second-gif{
+    /* .second-gif{
         display: none;
-    }
+    } */
 
     .w-50{
         width: 100%;
@@ -2144,6 +2209,15 @@ span-but{
     .name-profile-ctn img{
         width: 40%;
     }
+
+    .watercolor-ctn img{
+        left: -250px;
+    }
+
+    .red-paint-bg img{
+        right: 0;
+    }
+
     .about-me-background{
         margin-top: 100px;
     }
@@ -2151,6 +2225,13 @@ span-but{
     .about-me-text h1{
         font-size: 2.0rem;
         margin: 10px 0;
+    }
+
+    .coding-gif{
+        margin-top: 100px !important;
+        margin-bottom: 50px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
     }
 
     .why-me{
@@ -2168,9 +2249,9 @@ span-but{
     .personal{
         margin: 0;
     }
-    .employment{
+    /* .employment{
         display: none;
-    }
+    } */
 
     .projectCtn{
         margin-top: 370px;
