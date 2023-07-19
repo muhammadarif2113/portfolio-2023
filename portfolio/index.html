@@ -131,6 +131,7 @@
             <h1 id="skills" class="skills-placeholder">Skills</h1>
 
 
+
             <div class="skills-header">
                 <h1 class="skills-title">Skills</h1>
             </div>
@@ -335,10 +336,12 @@
                     <img src="img-com/pngegg (2)-min.png" />
                 </div>
                 <div class="about-me-text">
-                    <h1 class="about-me-title" data-aos="fade-up">About Me</h1>
-                    <p>Greetings! I am a skilled and dedicated <span class="green-txt">Email Developer</span> with a
+                    <div class="about-me-title-ctn">
+                        <h1 class="about-me-title" data-aos="fade-up">About Me</h1>
+                    </div>
+                    <p>Greetings! I am a skilled and dedicated <span class="green-txt">Email Developer</span> and <span class="green-txt">Content Editor</span>. I have a
                         passion for crafting engaging and visually appealing <span class="green-txt">email
-                            campaigns</span>. My expertise lies in translating designs into <span
+                            campaigns</span> and working with CMS's like <span class="green-txt">Shopify</span> and <span class="green-txt">Wordpress</span>. My expertise lies in translating designs into <span
                             class="green-txt">fully functional</span> websites and emails while utilizing my development
                         skills to <span class="green-txt">enhance</span> and <span class="green-txt">customize</span>
                         their features.</p>
@@ -347,7 +350,7 @@
                             <ul class="personal">
                                 <li>
                                     <h3>Email</h3>
-                                    <p>saimdev2@gmail.com</p>
+                                    <p>saim@saimdev.com</p>
                                 </li>
                                 <li>
                                     <h3>Location</h3>
@@ -380,7 +383,7 @@
                 />
             <div class="about-me gif-props" id="about-me2">
                 <div class="why-me-ctn">
-                    <h3 class="gif-h1 about-me-what"> HTML Email Development</h3>
+                    <h3 class="gif-h1 about-me-what"> <span style="background: #fff7df;"> HTML Email </span> Development</h3>
                     <ul class="why-me">
 
                         <li>
@@ -442,8 +445,8 @@
                     style="width: 200px; position: relative; margin: 50px auto;"
                 /> 
                 <div class="second-gif">
-                    <div class="ctn" style="padding-bottom: 10px; ">
-                        <h3 class="gif-h1 about-me-what"> Shopify Theme Development</h3>
+                    <div class="ctn" style="padding-bottom: 10px;">
+                        <h3 class="gif-h1 about-me-what"> <span style="background: #fff7df;">Shopify Theme</span> Development</h3>
                         <ul class="why-me">
 
                             <li style="margin: 15px 0">
@@ -693,6 +696,9 @@
         </div>
     </div>
     <section id="contact"class="spikes">
+        <div class="mail-img">
+            <img src="img-com/mail (1) (1).png" data-aos="fade-up-right"/>
+        </div>
         <div class="form-ctn">
             <h3 class="contact-title">CONTACT</h3>
             <form>
@@ -721,10 +727,6 @@
             <img src="img-com/pngegg (1)-min.png" data-aos="fade-up-left"/>
         </div>
     </section>
-
-    <div class="mail-img">
-        <img src="img-com/mail (1).png" data-aos="fade-up-right"/>
-    </div>
 
     <footer>
         <div class="waves">
@@ -812,16 +814,28 @@
 
         if(aboutHeight==-450){
             gsap.to(".about-me", { 
-            y: aboutHeight,
-            duration: 1.2,
-            ease: "Bounce.easeIn",
-            scrollTrigger: {
-                trigger: ".about-me",
-                start: "center center",
-                end: "center center",
-                toggleActions: "play none reverse reverse",
-            }
-        })
+                y: aboutHeight,
+                duration: 1.2,
+                ease: "Bounce.easeIn",
+                scrollTrigger: {
+                    trigger: ".about-me",
+                    start: "center center",
+                    end: "center center",
+                    toggleActions: "play none reverse reverse",
+                }
+            })
+        } else if(aboutHeight==-600) {
+            gsap.to(".about-me", { 
+                y: aboutHeight,
+                duration: 1.2,
+                ease: "Bounce.easeIn",
+                scrollTrigger: {
+                    trigger: ".about-me",
+                    start: "center center",
+                    end: "center center",
+                    toggleActions: "play none reverse reverse",
+                }
+            })
         }
 
 
