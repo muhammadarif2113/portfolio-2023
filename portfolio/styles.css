@@ -2093,6 +2093,10 @@ span-but{
         margin-top: 80px;
     }
 
+    .about-me-background::before{
+        background-size: contain;
+    }
+
     .about-me-background{
         height: 2000px;
     }
