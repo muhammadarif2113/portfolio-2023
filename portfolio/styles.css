@@ -1766,7 +1766,7 @@ span-but{
     }
   }
 /* For wide screens */
-@media screen and (min-width: 1241px) {
+@media screen and (min-width: 1641px) {
     .bubble-content{
         margin-top: 200px;
     }
