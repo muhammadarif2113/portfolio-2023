@@ -88,6 +88,11 @@ body{
     font-size: 30px;
     font-weight: 600;
 }
+.seven{
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-weight: 400;
+    /* font-family: 'Playfair Display SC', serif; */
+}
 /* ANIMATION CLASSES */ 
 
 [data-aos="rotate-ac"] {
@@ -510,7 +515,7 @@ body{
     font-weight: 600;
     font-size: 25px;
     margin-top: 0;
-    color: #046a00;
+    color: #069001;
 }
 
 .about-me-background{
@@ -761,7 +766,6 @@ body{
     cursor: pointer;
     margin: 0 10px 20px 10px;
     padding: 5px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     font-family: 'Work Sans', sans-serif;
     color: #000000; 
 }
@@ -1833,6 +1837,20 @@ span-but{
     .why-me-text2{
         /* font-size: 1.1rem; */
         font-size: 18px;
+    }
+    .watercolor-ctn img{
+        top: -250px;
+        left: -200px;
+    }
+    .red-paint-bg img{
+        top: 200px;
+        right: -250px;
+    }
+    .shopify-width{
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+
     }
 }
   
