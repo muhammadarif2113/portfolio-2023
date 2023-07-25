@@ -575,6 +575,7 @@ body{
 .gif-props{
     text-align: left; 
     display: flex;
+    align-items: center;
 }
 
 .gif{
