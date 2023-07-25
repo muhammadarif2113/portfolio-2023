@@ -507,9 +507,10 @@ body{
 
 .bio-desc3{
     font-family: 'Jost', sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 25px;
     margin-top: 0;
+    color: #046a00;
 }
 
 .about-me-background{
