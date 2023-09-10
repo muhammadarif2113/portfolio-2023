@@ -11,14 +11,14 @@ body{
     color: black;
 }
 
-.skills-header, .project-title, .about-me-title-ctn{
+.skills-header, .project-title, .about-me-title-ctn, .about-me-what{
     position: relative;
 }
-.skills-header h1, .project-title h1, .about-me-title-ctn h1{
+.skills-header h1, .project-title h1, .about-me-title-ctn h1, .about-me-what{
     margin-bottom: 20px;
     padding-bottom: 20px;
 }
-.skills-header h1::before, .project-title h1::before, .about-me-title-ctn h1::before{
+.skills-header h1::before, .project-title h1::before, .about-me-title-ctn h1::before, .about-me-what::before{
     content: "";
     position: absolute;
     display: block; 
@@ -28,7 +28,7 @@ body{
     bottom: 1px;
     left: calc(50% - 60px);
 }
-.skills-header h1::after, .project-title h1::after, .about-me-title-ctn h1::after{
+.skills-header h1::after, .project-title h1::after, .about-me-title-ctn h1::after, .about-me-what::after{
     content: "";
     position: absolute;
     display: block; 
@@ -619,7 +619,7 @@ body{
     background-color: rgba(255, 255, 255, 0.641);
 
     font-family: 'Jost', sans-serif;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
 }
 
 .about-me-text p .green-txt{
@@ -2226,7 +2226,7 @@ span-but{
     }
 
     .about-me-background{
-        height: 2000px;
+        height: 1500px;
     }
 
 
