@@ -754,7 +754,7 @@ body{
     text-align: center;
     width: 1245px; 
     margin: 0 auto;
-    margin-top: 500px;
+    margin-top: 400px;
 
 }
 
@@ -935,6 +935,9 @@ span-but{
 }
 .button:hover:nth-child(5), .button:nth-child(5):focus{
     color: #f1564e;
+}
+.button:hover:nth-child(6), .button:nth-child(6):focus{
+    color: #00b798;
 }
 
 .button:focus {
@@ -1184,7 +1187,10 @@ span-but{
 .klaviyo{
     background-color: #FC0E05;
     border-radius: 10px;
-
+}
+.shopify{
+    background-color: #00b798;
+    border-radius: 10px;
 }
 
 .grid-img{
@@ -1331,6 +1337,37 @@ span-but{
     box-shadow: 0px 20px 74px 6px rgba(0,0,0,0.12);
 }
 
+.project-box9{
+    display: block;
+    background: url(/img/luxaryfreedom.myshopify.com_.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.project-box9:hover{
+    -webkit-box-shadow: 0px 20px 74px 6px rgba(0,0,0,0.12);
+    -moz-box-shadow: 0px 20px 74px 6px rgba(0,0,0,0.12);
+    box-shadow: 0px 20px 74px 6px rgba(0,0,0,0.12);
+}
+.project-box10{
+    display: block;
+    background: url(/Vegan.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.project-box10:hover{
+    -webkit-box-shadow: 0px 20px 74px 6px rgba(0,0,0,0.12);
+    -moz-box-shadow: 0px 20px 74px 6px rgba(0,0,0,0.12);
+    box-shadow: 0px 20px 74px 6px rgba(0,0,0,0.12);
+}
+
   .grey-bg{
     background: #efefef;
     position: absolute;
@@ -1369,11 +1406,15 @@ span-but{
   .project-box5 .grey-bg:hover .project-info .project-details,
   .project-box6 .grey-bg:hover .project-info .project-details,
   .project-box7 .grey-bg:hover .project-info .project-details,
-  .project-box8 .grey-bg:hover .project-info .project-details
+  .project-box8 .grey-bg:hover .project-info .project-details,
+  .project-box9 .grey-bg:hover .project-info .project-details,
+  .project-box10 .grey-bg:hover .project-info .project-details
+
+
   {
+    opacity: 1;
     -webkit-transform: translate3d(10px, 0, 0);
             transform: translate3d(10px, 0, 0);
-    opacity: 1;
   }
 
 
@@ -1386,7 +1427,10 @@ span-but{
   .project-box5 .grey-bg:hover .project-info .project-title,
   .project-box6 .grey-bg:hover .project-info .project-title,
   .project-box7 .grey-bg:hover .project-info .project-title,
-  .project-box8 .grey-bg:hover .project-info .project-title
+  .project-box8 .grey-bg:hover .project-info .project-title,
+  .project-box9 .grey-bg:hover .project-info .project-title,
+  .project-box10 .grey-bg:hover .project-info .project-details
+
   {
     opacity: 1;
   }
@@ -1438,6 +1482,12 @@ span-but{
   #project-title9, #project-details9{
     color: #FE000F;
   }
+  #project-title10, #project-details10, #github9{
+    color: #00b798;
+  }
+  #project-title11, #project-details11{
+    color: #FE000F;
+  }
 
   .project-explain{
     font-size: 1.1rem;
@@ -1456,7 +1506,11 @@ span-but{
   .project-box5 .grey-bg .project-info,
   .project-box6 .grey-bg .project-info,
   .project-box7 .grey-bg .project-info,
-  .project-box8 .grey-bg .project-info
+  .project-box8 .grey-bg .project-info,
+  .project-box9 .grey-bg .project-info,
+  .project-box10 .grey-bg .project-info
+
+
   {
     padding: 30px 20px;
     position: absolute;
@@ -1485,7 +1539,11 @@ span-but{
   .project-box5 .grey-bg .project-info .project-title,
   .project-box6 .grey-bg .project-info .project-title,
   .project-box7 .grey-bg .project-info .project-title,
-  .project-box8 .grey-bg .project-info .project-title
+  .project-box8 .grey-bg .project-info .project-title,
+  .project-box9 .grey-bg .project-info .project-title,
+  .project-box10 .grey-bg .project-info .project-title
+
+
   {
     font-size: 1.8rem;
     text-transform: uppercase;
@@ -1503,7 +1561,11 @@ span-but{
 .project-box5 .grey-bg:hover .project-info .fa-long-arrow-alt-right,
 .project-box6 .grey-bg:hover .project-info .fa-long-arrow-alt-right,
 .project-box7 .grey-bg:hover .project-info .fa-long-arrow-alt-right,
-.project-box8 .grey-bg:hover .project-info .fa-long-arrow-alt-right
+.project-box8 .grey-bg:hover .project-info .fa-long-arrow-alt-right,
+.project-box9 .grey-bg:hover .project-info .fa-long-arrow-alt-right,
+.project-box10 .grey-bg:hover .project-info .fa-long-arrow-alt-right
+
+
  {
     -webkit-transform: translate3d(10px, 0, 0);
             transform: translate3d(10px, 0, 0);
@@ -1520,7 +1582,11 @@ span-but{
   .project-box5 .grey-bg .project-info .fa-long-arrow-alt-right,
   .project-box6 .grey-bg .project-info .fa-long-arrow-alt-right,
   .project-box7 .grey-bg .project-info .fa-long-arrow-alt-right,
-  .project-box8 .grey-bg .project-info .fa-long-arrow-alt-right
+  .project-box8 .grey-bg .project-info .fa-long-arrow-alt-right,
+  .project-box9 .grey-bg .project-info .fa-long-arrow-alt-right,
+  .project-box10 .grey-bg .project-info .fa-long-arrow-alt-right
+
+
     {
     position: absolute;
     bottom: 0;
