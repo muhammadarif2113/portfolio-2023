@@ -137,6 +137,13 @@ body{
     transform: translateX(0);
 }
 
+.me-ctn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .about-me-title{
     opacity:0;
     /* filter: blur(5px); */
@@ -456,6 +463,34 @@ body{
 .navigation ul li:nth-child(4).active ~ .indicator{
     transform: translateX(271px);
 }
+
+.nav-logo{
+    font-size: 40px;
+    margin-top: 20px;
+    color: red;
+    text-decoration: none;
+    /* font-family: 'Croissant One', cursive; */
+    font-family: 'Salsa', cursive;
+    /* font-family: 'Aladin', cursive; */
+    background-color: #BDD5E8;
+    width: 200px;
+    border-radius: 10px;
+}
+
+.nav-logo a span{
+    margin-right: 20px;
+
+}
+
+.nav-logo .logo-1{
+    margin-left: 10px;
+    color: #244a8d;
+}
+
+.nav-logo .logo-2{
+    color: red;
+}
+
 
 .navbar .nav-logo{
     padding: 0;
@@ -2355,6 +2390,7 @@ span-but{
         position: absolute;
         margin: 160px 0 0 0;
         rotate: 3deg;
+        margin-top: 190px;
     }
 
     .nav-logo img{
