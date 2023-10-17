@@ -110,9 +110,9 @@
                 <div class="profile-text">
                     <div class="name-profile">
                         <div class="intro-ctn">
-                            <p class="bio-desc1">Hello, I'm</p>
+                            <p class="bio-desc1"><span id="language">Hello,</span> I'm</p>
                             <p class="bio-desc2">M. Saim <span>Arif</span></p>
-                            <p class="bio-desc3">Email Marketer/Email Developer</p>
+                            <p class="bio-desc3">Email Marketer/Content Editor</p>
                             <a href="#projects" style="text-decoration: none;">
                                 <button class="btn">
                                     <span class="btn-paint"></span>
@@ -1302,6 +1302,35 @@
                 console.log("An error has occured");
             });
         };
+
+        const text = document.querySelector("#language"); 
+
+        const textLoad = () => {
+            setTimeout(() => {
+                text.textContent = "Hello,"; 
+            }, 0); 
+            setTimeout(() => {
+                text.textContent = "¡Hola!"; 
+            }, 4000); 
+            setTimeout(() => {
+                text.textContent = "Ciao"; 
+            }, 8000); 
+            setTimeout(() => {
+                text.textContent = "Bonjour"; 
+            }, 12000); 
+            setTimeout(() => {
+                text.textContent = "Nǐ Hǎo"; 
+            }, 16000); 
+            setTimeout(() => {
+                text.textContent = "Marhaba"; 
+            }, 20000); 
+            setTimeout(() => {
+                text.textContent = "Namaste,"; 
+            }, 24000); 
+        }
+
+        textLoad(); 
+        setInterval(textLoad, 28000); 
         
 
     </script>
