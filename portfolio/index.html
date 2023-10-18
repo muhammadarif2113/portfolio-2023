@@ -1102,6 +1102,43 @@
             duration: 0.5
         },)
 
+        const text = document.querySelector("#language"); 
+
+const textLoad = () => {
+    setTimeout(() => {
+        text.textContent = "Hello,"; 
+    }, 0); 
+    setTimeout(() => {
+        text.textContent = "¡Hola!"; 
+    }, 4000); 
+    setTimeout(() => {
+        text.textContent = "Ciao,"; 
+    }, 8000); 
+    setTimeout(() => {
+        text.textContent = "Bonjour,"; 
+    }, 12000); 
+    setTimeout(() => {
+        text.textContent = "Nǐ Hǎo,"; 
+    }, 16000); 
+    setTimeout(() => {
+        text.textContent = "Marhaba,"; 
+    }, 20000); 
+    setTimeout(() => {
+        text.textContent = "Namaste,"; 
+    }, 24000); 
+    setTimeout(() => {
+        text.textContent = "Olá,";
+    }, 28000); 
+    setTimeout(() => {
+        text.textContent = "Kon'nichiwa,"; 
+    }, 32000); 
+}
+
+
+
+textLoad(); 
+setInterval(textLoad, 32000); 
+
         var aboutMeHeight = document.querySelector('.about-me')
 
         var aboutHeight = aboutMeHeight.clientHeight * -1;
@@ -1303,34 +1340,7 @@
             });
         };
 
-        const text = document.querySelector("#language"); 
-
-        const textLoad = () => {
-            setTimeout(() => {
-                text.textContent = "Hello,"; 
-            }, 0); 
-            setTimeout(() => {
-                text.textContent = "¡Hola!"; 
-            }, 4000); 
-            setTimeout(() => {
-                text.textContent = "Ciao"; 
-            }, 8000); 
-            setTimeout(() => {
-                text.textContent = "Bonjour"; 
-            }, 12000); 
-            setTimeout(() => {
-                text.textContent = "Nǐ Hǎo"; 
-            }, 16000); 
-            setTimeout(() => {
-                text.textContent = "Marhaba"; 
-            }, 20000); 
-            setTimeout(() => {
-                text.textContent = "Namaste,"; 
-            }, 24000); 
-        }
-
-        textLoad(); 
-        setInterval(textLoad, 28000); 
+      
         
 
     </script>

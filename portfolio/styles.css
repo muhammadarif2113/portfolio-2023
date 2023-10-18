@@ -255,6 +255,8 @@ body{
 }
 
 
+
+
 .float{
     animation: float 2s ease-out infinite;
 }
@@ -568,7 +570,8 @@ body{
 }
 
 .bio-desc1, .bio-desc2{
-    font-family: 'Jost', sans-serif; 
+    /* font-family: 'Jost', sans-serif;  */
+    font-family: 'Croissant One', cursive;
     margin: 0;
 }
 .bio-desc2{
@@ -578,16 +581,23 @@ body{
 
 #language{
     font-style: italic;
-    transition: all 0.3s ease; 
-
+    animation: 4s anim-lineUp ease-out infinite;
 }
+@keyframes anim-lineUp {
+    0%{
+    }
+    100% {
+        text-shadow: 0 0 10px #ef00e3a8, 0 0 20px #ef00e3a8, 0 0 20px #ef00e3a8, 0 0 20px #ef00e3a8, 0 0 2px #fed128, 2px 2px 2px #806914;
+        color: #f5efcb;
+    }
+    50% {
+        text-shadow: 0 0 2px #800e0b, 0 0 5px #800e0b, 0 0 5px #800e0b, 0 0 5px #800e0b, 0 0 2px #800e0b, 4px 4px 2px #40340a;
+        color: #eda0d3;
+    }
+  }
 
 #language:before{
-    transition: all 0.3s ease; 
-    /* content: "";
-    position: absolute;
-    background-color: red;
-    animation: animate 4s steps(12) infinite; */
+
 }
 
 .bio-desc2 span{
