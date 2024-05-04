@@ -249,9 +249,9 @@ body{
 
 .name-profile img{
     border-radius: 75px;
-    width: 70%;
+    width: 100%;
     min-width: 240px;
-    border: 3px solid red;
+    /* border: 3px solid white; */
 }
 
 
@@ -587,13 +587,13 @@ body{
     0%{
     }
     100% {
-        text-shadow: 0 0 10px #ef00e3a8, 0 0 20px #ef00e3a8, 0 0 20px #ef00e3a8, 0 0 20px #ef00e3a8, 0 0 2px #fed128, 2px 2px 2px #806914;
-        color: #f5efcb;
+        text-shadow: 0 0 10px #000000a8, 0 0 20px #000000a8, 0 0 20px #000000a8, 0 0 20px #000000a8, 0 0 2px #000000, 2px 2px 2px #000000;
+        color: #fbfbfb;
     }
-    50% {
-        text-shadow: 0 0 2px #800e0b, 0 0 5px #800e0b, 0 0 5px #800e0b, 0 0 5px #800e0b, 0 0 2px #800e0b, 4px 4px 2px #40340a;
-        color: #eda0d3;
-    }
+    /* 50% {
+        text-shadow: 0 0 2px #ffffff, 0 0 5px #ffffff, 0 0 5px #ffffff, 0 0 5px #ffffff, 0 0 2px #ffffff, 4px 4px 2px #ffffff;
+        color: #ffffff;
+    } */
   }
 
 #language:before{
@@ -902,8 +902,8 @@ span-but{
     padding: 20px 30px;
     font-size: 24px;
     border-radius: 59px;
-    border: 2px solid #f1564e;
-    color: #f1564e;
+    border: 2px solid #FF0000;
+    color: #FF0000;
     background-color: transparent;
     text-transform: uppercase;
     cursor: pointer;
@@ -1029,6 +1029,13 @@ span-but{
 .button:hover:nth-child(6), .button:nth-child(6):focus{
     color: #00b798;
 }
+.button:hover:nth-child(7), .button:nth-child(7):focus{
+    color: #34d841;
+}
+.button:hover:nth-child(8), .button:nth-child(7):focus{
+    color: #b8009f;
+}
+
 
 .button:focus {
     box-shadow: none; 
@@ -1279,9 +1286,20 @@ span-but{
     border-radius: 10px;
 }
 .shopify{
+    background-color: #004cff;
+    border-radius: 10px;
+}
+
+.ads{
+    background-color: #b8009f;
+    border-radius: 10px;
+}
+
+.media{
     background-color: #00b798;
     border-radius: 10px;
 }
+
 
 .grid-img{
     width: 100%;
@@ -1429,7 +1447,7 @@ span-but{
 
 .project-box9{
     display: block;
-    background: url(/img/luxaryfreedom.myshopify.com_.png) no-repeat;
+    background: url(/portfolio-2023/portfolio/img/luxaryfreedom.myshopify.com_.png) no-repeat;
     background-size: cover;
     width: 100%;
     height: 100%;
@@ -1444,7 +1462,7 @@ span-but{
 }
 .project-box10{
     display: block;
-    background: url(/Vegan.png) no-repeat;
+    background: url(/portfolio-2023/portfolio/img/Vegan.png) no-repeat;
     background-size: cover;
     width: 100%;
     height: 100%;
@@ -1453,6 +1471,38 @@ span-but{
 }
 
 .project-box10:hover{
+    -webkit-box-shadow: 0px 20px 74px 6px rgba(0,0,0,0.12);
+    -moz-box-shadow: 0px 20px 74px 6px rgba(0,0,0,0.12);
+    box-shadow: 0px 20px 74px 6px rgba(0,0,0,0.12);
+}
+
+.project-box11{
+    display: block;
+    background: url(/portfolio-2023/portfolio/img/tiffany3.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.project-box11:hover{
+    -webkit-box-shadow: 0px 20px 74px 6px rgba(0,0,0,0.12);
+    -moz-box-shadow: 0px 20px 74px 6px rgba(0,0,0,0.12);
+    box-shadow: 0px 20px 74px 6px rgba(0,0,0,0.12);
+}
+
+.project-box12{
+    display: block;
+    background: url(/portfolio-2023/portfolio/img/bunnys.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.project-box12:hover{
     -webkit-box-shadow: 0px 20px 74px 6px rgba(0,0,0,0.12);
     -moz-box-shadow: 0px 20px 74px 6px rgba(0,0,0,0.12);
     box-shadow: 0px 20px 74px 6px rgba(0,0,0,0.12);
@@ -1498,7 +1548,11 @@ span-but{
   .project-box7 .grey-bg:hover .project-info .project-details,
   .project-box8 .grey-bg:hover .project-info .project-details,
   .project-box9 .grey-bg:hover .project-info .project-details,
-  .project-box10 .grey-bg:hover .project-info .project-details
+  .project-box10 .grey-bg:hover .project-info .project-details, 
+  .project-box11 .grey-bg:hover .project-info .project-details, 
+  .project-box12 .grey-bg:hover .project-info .project-details
+
+
 
 
   {
@@ -1519,7 +1573,14 @@ span-but{
   .project-box7 .grey-bg:hover .project-info .project-title,
   .project-box8 .grey-bg:hover .project-info .project-title,
   .project-box9 .grey-bg:hover .project-info .project-title,
-  .project-box10 .grey-bg:hover .project-info .project-details
+  .project-box10 .grey-bg:hover .project-info .project-details, 
+  .project-box11 .grey-bg:hover .project-info .project-details, 
+  .project-box11 .grey-bg:hover .project-info .project-title,
+  .project-box12 .grey-bg:hover .project-info .project-details,
+  .project-box12 .grey-bg:hover .project-info .project-title
+
+
+
 
   {
     opacity: 1;
@@ -1578,6 +1639,9 @@ span-but{
   #project-title11, #project-details11{
     color: #FE000F;
   }
+  #project-title12, #project-details12{
+    color: #004cff;
+  }
 
   .project-explain{
     font-size: 1.1rem;
@@ -1598,7 +1662,10 @@ span-but{
   .project-box7 .grey-bg .project-info,
   .project-box8 .grey-bg .project-info,
   .project-box9 .grey-bg .project-info,
-  .project-box10 .grey-bg .project-info
+  .project-box10 .grey-bg .project-info, 
+  .project-box11 .grey-bg .project-info, 
+  .project-box12 .grey-bg .project-info
+
 
 
   {
@@ -1631,7 +1698,11 @@ span-but{
   .project-box7 .grey-bg .project-info .project-title,
   .project-box8 .grey-bg .project-info .project-title,
   .project-box9 .grey-bg .project-info .project-title,
-  .project-box10 .grey-bg .project-info .project-title
+  .project-box10 .grey-bg .project-info .project-title, 
+  .project-box11 .grey-bg .project-info .project-title, 
+  .project-box12 .grey-bg .project-info .project-title
+
+
 
 
   {
@@ -1653,7 +1724,11 @@ span-but{
 .project-box7 .grey-bg:hover .project-info .fa-long-arrow-alt-right,
 .project-box8 .grey-bg:hover .project-info .fa-long-arrow-alt-right,
 .project-box9 .grey-bg:hover .project-info .fa-long-arrow-alt-right,
-.project-box10 .grey-bg:hover .project-info .fa-long-arrow-alt-right
+.project-box10 .grey-bg:hover .project-info .fa-long-arrow-alt-right, 
+.project-box11 .grey-bg:hover .project-info .fa-long-arrow-alt-right, 
+.project-box12 .grey-bg:hover .project-info .fa-long-arrow-alt-right
+
+
 
 
  {
@@ -1674,7 +1749,11 @@ span-but{
   .project-box7 .grey-bg .project-info .fa-long-arrow-alt-right,
   .project-box8 .grey-bg .project-info .fa-long-arrow-alt-right,
   .project-box9 .grey-bg .project-info .fa-long-arrow-alt-right,
-  .project-box10 .grey-bg .project-info .fa-long-arrow-alt-right
+  .project-box10 .grey-bg .project-info .fa-long-arrow-alt-right, 
+  .project-box11 .grey-bg .project-info .fa-long-arrow-alt-right, 
+  .project-box12 .grey-bg .project-info .fa-long-arrow-alt-right
+
+
 
 
     {
